@@ -1,0 +1,35 @@
+.about-container {
+  white-space: pre-line;
+  display: flex;
+  justify-content: center;
+
+  .about-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 80px;
+    width: auto;
+    max-width: 70vw;
+    height: fit-content;
+    padding: 50px;
+    background-color: #41818f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 30px;
+
+
+    .cropper {
+      border-radius: 50%;
+      height: 300px;
+      width: 300px;
+      overflow: hidden;
+    }
+    .image {
+      margin: -35px 0 0 0;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+  }
+}

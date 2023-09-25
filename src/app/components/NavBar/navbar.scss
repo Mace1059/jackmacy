@@ -1,0 +1,33 @@
+.navbar {
+  height: 10vh;
+  align-items: center;
+  text-align: center;
+  border-bottom: solid #8EA5AE 2px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+
+
+  .name {
+    width: 10rem;
+    font-size: 35px;
+    margin-left: 30px;
+  }
+
+  .buttons {
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+    font-size: 20px;
+    gap: 2rem;
+    button {
+      // border: #738991 solid 4px;
+      border-radius: 10rem;
+      height: 3rem;
+      width: 10rem;
+      &:hover{
+        color: gray;
+      }
+    }
+  }
+}

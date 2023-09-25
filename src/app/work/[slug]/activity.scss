@@ -1,0 +1,51 @@
+.activity-body {
+    white-space: pre-line;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+//   align-items: center;
+  .activity-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: auto;
+    max-width: 70vw;
+    height: fit-content;
+    padding: 50px;
+    background-color: #41818f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 20px;
+
+    .links{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+    }
+    .link{
+        font-size: 18px;
+        // font-style: italic;
+        color: white;
+        border-radius: 2rem;
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+        width: fit-content;
+        background-color: #51AABD;
+    }
+
+    // backdrop-filter: blur(50px);
+    h1 {
+      line-height: 1em;
+      font-size: 80px;
+    }
+    h2 {
+      font-size: 40px;
+      font-style: italic;
+    }
+    h4 {
+      font-size: 20px;
+    }
+  }
+}

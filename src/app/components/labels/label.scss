@@ -1,0 +1,23 @@
+.label-list{
+    display: flex;
+    // justify-content: space-between;
+    // flex-grow: 4;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 100px;
+}
+
+
+.label{
+    font-size: 18px;
+    // font-style: italic;
+    color: white;
+    border-radius: 2rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+
+
+}

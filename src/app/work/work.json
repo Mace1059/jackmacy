@@ -1,0 +1,102 @@
+[
+    {
+        "title": "DALI",
+        "id": "dali",
+        "subtitle": "Full Stack Developer",
+        "text": "DALI is Dartmouth's Digital Applied Learning & Innovation Lab. I work as a full stack developer in a team of 8-10 that includes designers and project managers in 10 week sprints to design prototypes for partners.  DALI emphasizes teamwork, effort, and personal growth.  My knowledge in frontend development has expanded tenfold since joining DALI.  My most recent project was mGame which I worked on in the spring of 2023.  It was shipped from the lab that June. See the company website and the link to try out mGame above.",
+        "image": "DALI",
+        "links": [
+            {
+                "name": "Company Website",
+                "link": "https://dali.dartmouth.edu/"
+            },
+            {
+                "name": "mGame",
+                "link": "https://mgame-dali.onrender.com/home"
+            }
+        ]
+    },
+    {
+        "title": "mGame",
+        "id": "mgame",
+        "subtitle": "Full Stack Developer",
+        "text": "mGame is a web application designed to engage patients with their providers during their recovery process. The website tracks progress through weekly questionnaires and surveys with an easy-to-use UI and modern graphics.  We partnered with the Dartmouth Hitchcock Medical Center for the project.",
+        "image": "mGame",
+        "links": [
+            {
+                "name": "mGame",
+                "link": "https://mgame-dali.onrender.com/home"
+            }
+        ]
+    },
+    {
+        "title": "CS10 Coursework",
+        "id": "cs30",
+        "subtitle": "Object Oriented Programming",
+        "text": "In CS10, I learned object oriented programming through both lectures and problem sets.  These problem sets included motion tracking techniques, collaborative drawing boards using websockets, a Viterbi algorithm that utilized Hidden Markov Models, the Kevin Bacon Game, and DFS/BFS/Boyer-Moore algorithms.\\n \\n Unfortunately I do not have access to my work at this moment due to the expiration of the IDE license used in the class."
+    },
+    {
+        "title": "CS70 Coursework",
+        "id": "cs70",
+        "subtitle": "Applied Computer Science",
+        "text": "In CS70, I used linear algebra for matrix manipulation. I recreated Poisson blending, worked with inverse kinematics to determine the location of a robot arm, and applied Monte Carlo to prove the Central Limit Theorem.",
+        "image": "pic"
+    },
+    {
+        "title": "Statistics/Econometrics Coursework",
+        "id": "stats",
+        "text": ""
+    },
+    {
+        "title": "Macroeconomics Coursework",
+        "id": "macro",
+        "text": ""
+    },
+    {
+        "title": "Bezanilla Lab",
+        "id": "lab",
+        "subtitle": "Lab Technician",
+        "text": "In Magdalena Bezanilla's Lab, I confirmed effectiveness of DNA insertion through CRISPR in moss samples and interpreted data from PCR and Gel Electrophoresis to study factors that result in plant cell growth in actin filaments.",
+        "image": "pic",
+        "links": [
+            {
+                "name": "Lab Homepage",
+                "link": "https://sites.dartmouth.edu/bezanillalab/"
+            }
+        ]
+    },
+    {
+        "title": "BrackIt!",
+        "id": "brackit",
+        "subtitle": "Full Stack Developer",
+        "text": "fyageufeaufgeaufgueagfuaeuagfueag",
+        "image": "pic"
+    },
+    {
+        "title": "Chambiar",
+        "id": "Chambiar",
+        "subtitle": "Full Stack Developer",
+        "text": "This is my current project.",
+        "image": "pic"
+    },
+    {
+        "title": "The Cold War",
+        "id": "coldwar",
+        "subtitle": "Video Editing",
+        "text": "The Cold War is a video project I produced for Film 47. I used Adobe Premiere Pro to edit and used a DSLR camera for filming. It took me over 100 hours to organize actors, film, and edit the movie.\\n \\n Plot:  There is a secret weapon that needs to be destroyed behind enemy lines, can three unlikely heroes make it in time?",
+        "image": "pic",
+        "links": [
+            {
+                "name": "Youtube Link to The Cold War",
+                "link": "https://www.youtube.com/watch?v=iinf480Ules"
+            }
+        ]
+        
+    },
+    {
+        "title": "The Pitch",
+        "id": "pitch",
+        "subtitle": "TAMID",
+        "text": "fyageufeaufgeaufgueagfuaeuagfueag"
+    }
+]

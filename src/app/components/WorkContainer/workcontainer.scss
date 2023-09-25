@@ -1,0 +1,53 @@
+.work-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 75vw;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // background-color: #41818F;
+  border-radius: 2rem;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(to top, #41818F 50%, rgb(0,0,0,0) 50%) bottom;
+  background-size: 100% 200%;
+  background-position: top;
+  transition: 0.1s ease-in-out;
+
+  &:hover {
+    background-position: bottom;
+    cursor: pointer;
+  }
+
+  .work-left-container {
+    flex-direction: column;
+
+    h1 {
+      line-height: 1em;
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 30px;
+      font-style: italic;
+    }
+    h4 {
+      font-size: 20px;
+    }
+  }
+
+  .cropper {
+    .image {
+      border: #8ea5ae solid 4px;
+      border-radius: 2rem;
+      height: 200px;
+      width: 200px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+}
