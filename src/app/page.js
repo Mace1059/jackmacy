@@ -46,9 +46,9 @@ export default function Home() {
         />
         <div className="left-container">
           <h1>
-            Hi, I'm <span>Jack, </span>
+            Hi, I&apos;m <span>Jack, </span>
             <span style={{ fontSize: "50px", verticalAlign: "center" }}>
-              and I'm a
+              and I&apos;m a
             </span>
           </h1>
 

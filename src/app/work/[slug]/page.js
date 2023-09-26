@@ -21,6 +21,7 @@ const WorkExample = ({ params }, props) => {
             {activity.links
               ? activity.links.map((link) => (
                   <a
+                    key={link.name}
                     className="link"
                     href={link.link}
                     target="_blank"
