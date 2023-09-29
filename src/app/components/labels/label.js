@@ -5,7 +5,7 @@ const Label = (props) => {
     
 
     return (
-        <div className="label" style={{backgroundColor: props.color}}>
+        <div className="label" >
             <h2>{props.text}</h2>
         </div>
     )

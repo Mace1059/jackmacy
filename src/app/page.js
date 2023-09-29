@@ -1,6 +1,7 @@
 import "./home.scss";
 import Image from "next/image";
 import Labels from "./components/labels/labels";
+import RootLayout from "./layout";
 
 import fish from "./photos/jack_fish.png";
 import mountain from "./images/mountain.svg";
@@ -36,6 +37,7 @@ export default function Home() {
   const color = colors[Math.floor(Math.random() * colors.length)];
   return (
     // <div className="center">
+    
       <div className="container">
         <Image
           className="mountains"

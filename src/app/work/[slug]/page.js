@@ -9,7 +9,6 @@ const WorkExample = ({ params }, props) => {
   const activity = jsonFile.find((w) => id === w.id);
 
   const messageWithLineBreaks = activity.text.replace(/\\n/g, "\n")
-  console.log(messageWithLineBreaks)
 
   return (
     <div className="activity-body">
