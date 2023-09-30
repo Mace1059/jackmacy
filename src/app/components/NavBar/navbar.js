@@ -11,16 +11,16 @@ const NavBar = (props) => {
         </div>
         <div className="buttons">
           <Link href={`/`}>
-            <button>Home</button>
+            Home
           </Link>
           <Link href={"/work"}>
-            <button>Work</button>
+            Work
           </Link>
           <Link href={"/about"}>
-            <button>About</button>
+            About
           </Link>
           <Link href={"/gallery"}>
-            <button>Gallery</button>
+            Gallery
           </Link>
         </div>
       </div>

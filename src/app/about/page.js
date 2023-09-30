@@ -48,11 +48,12 @@ export default function About() {
           tour of the Upper Valley for 5 days.
           <br />
           <br />{" "}
-          <h3 style={{ textAlign: "center" }}>
+          
+        </h3>
+        <h3 style={{ textAlign: "center" }}>
             I appreciate you spending the time to learn about me. Please feel
             free to reach out!
           </h3>
-        </h3>
       </div>
     </div>
   );
