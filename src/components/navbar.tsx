@@ -14,7 +14,7 @@ function NavBar() {
         <a href="/about">
           About
         </a>
-        <a href={"https://mui.com/material-ui/getting-started/installation/"} target="_blank">
+        <a href={"https://drive.google.com/file/d/11g59plnHMsgZxKLeOyKArwZ8mRUMLPIP/view?usp=sharing"} target="_blank">
           Resume
         </a>
         <a href={"https://www.linkedin.com/in/jack-macy-b227a8239/"} target="_blank">
