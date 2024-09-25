@@ -1,0 +1,10 @@
+.center{
+  justify-content: center;
+  // align-items: center;
+  margin: 100px 150px;
+}
+
+.enlarge:hover{
+  cursor: pointer;
+  transform: scale(1.01)
+}
