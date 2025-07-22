@@ -96,7 +96,22 @@ function JoinPage() {
               "https://medium.com/@rebecca.e.ronai.25/bond-2a4a3c0a10ec"
             ]}
           />
-          <WorkItem image={<img src={matte}></img>} title="Zero-Shot Image Matting with HQ-SAM" role="Student Research" description=""></WorkItem>
+          <WorkItem image={<img src={matte}></img>} title="Zero-Shot Image Matting with HQ-SAM" role="Student Research" 
+                      description="Bond is a DIY AI Agent on our custom SaaS platform that leverages a simple UML UI. In its current state, it effectively manipulates user data. It uses a React Typescript frontend, Flask backend, and a novel infrastructure for UML-based flows. Bond can execute its own code in a safe environment in order to accomplish specific tasks. Created in CS98 at Dartmouth College."
+            accomplishments={[
+              "Achieved a functional MVP in 20 weeks",
+              "Successfully developed over 20 data manipulation tools",
+              "Can easily structure and unstructure data",
+              "Reusable code execution framework",
+            ]}
+            av="Backend is currently down for cost-saving reasons. Please refer to the video demo."
+            links={[
+              "https://bond-agent.onrender.com/",
+              "https://github.com/dartmouth-cs98-24f/project-diy-ai-agent",
+              "https://vimeo.com/1064513426?share=copy",
+              "https://medium.com/@rebecca.e.ronai.25/bond-2a4a3c0a10ec"
+            ]}
+          />
           <WorkItem image={<img src={rpp}></img>} title="Risk Budgeting Portfolio Algorithm" role="Student Research" description="Culminating Experience"></WorkItem>
           <WorkItem image={<img src={chambiar}></img>} title="Chambiar" role="Full Stack Developer" description=""></WorkItem>
           <WorkItem image={<img src={TSE}></img>} title="Tiny Search Engine" role="Student" description=""></WorkItem>
