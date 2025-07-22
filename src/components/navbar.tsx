@@ -28,10 +28,13 @@ function NavBar() {
 const navbarStyles: CSS.Properties = {
   alignItems: "center",
   display: "flex",
+  position: "sticky",
+  top: "0",
   height: "5rem",
   width: "100%",
   color: "black",
   boxShadow: "rgba(135, 159, 170, 0.25) 0px 2px 10px",
+  background: "white",
   padding: "30px 40px",
   fontSize: "1.5rem",
   boxSizing: "border-box",

@@ -1,4 +1,4 @@
-import { Modal } from "@mui/material";
+import { List, ListItem, ListItemText, Modal } from "@mui/material";
 import CSS from "csstype";
 import React from "react";
 
@@ -7,9 +7,12 @@ type Props = {
   title: string,
   description: string,
   image?: JSX.Element
+  accomplishments?: string[],
+  av?: string,
+  links?: string[],
 }
 
-function WorkItem({ role, title, description, image }: Props) {
+function WorkItem({ role, title, description, image, accomplishments, av, links }: Props) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -45,11 +48,60 @@ function WorkItem({ role, title, description, image }: Props) {
         onClose={handleClose}
       >
         <div style={{ ...modalstyles }}>
-          <div style={{ fontWeight: "bold", fontSize: "30px", marginBottom: "2.4rem"}}>
+          
+          <div style={{ fontWeight: "bold", fontSize: "30px"}}>
             {title}
           </div>
-          <div style={{ fontSize: "1.2rem", textAlign: "center"}}>
+          <div style={{ fontWeight: "bold", fontSize: "20px", marginBottom: "1rem", textTransform: "uppercase", 
+            color: "rgb(0, 105, 62)"}}>
+            {role}
+          </div>
+
+          {/* <div
+            style={{
+              width: "100%",
+              maxHeight: "300px",
+              maxWidth: "20rem",
+              overflow: "hidden",
+              float: "left",
+            }}>
+            {image}
+          </div> */}
+
+          <div style={{ fontSize: "1.2rem"}}>
             {description}
+          </div>
+          {accomplishments && (
+            <div style={{ fontSize: "1.2rem", marginTop: "2rem"}}>
+                <>
+                  <div style={{fontWeight: "bold"}}>
+                    Key Accomplishments
+                  </div>
+                  <ul>
+                    {accomplishments.map((item, index) => (
+                      <li key={index}>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              
+            </div>)
+          }
+          
+          <div style={{ fontSize: "1.2rem", marginTop: "1rem"}}>
+            {av ? av : null}
+
+            {links ? (
+            <div style={{ fontSize: "1.2rem"}}>
+                <div style={{display: "flex", flexDirection: "column"}}>
+                {links.map((item, index) => (
+                  <a href={item} style={{color: "rgb(0, 105, 62)"}} key={index}>{item}</a>
+                ))}
+                </div>
+              
+            </div>) 
+            : null}
           </div>
         </div>
       </Modal>
@@ -72,9 +124,9 @@ const modalstyles: CSS.Properties = {
   borderRadius: "17px",
   display: "flex",
   flexDirection: "column",
-  gap:"1rem",
-  justifyContent: "center",
-  alignItems:"center",
+  gap:"0.5rem",
+  // justifyContent: "center",
+  // alignItems:"center",
 };
 
 const styles: CSS.Properties = {

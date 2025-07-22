@@ -10,7 +10,7 @@ type Props = {
 function WorkSection({ title, children }: Props) {
   return (
     <div style={{ ...styles }}>
-      <div className="stick" style={{ fontSize: "40px", width: "25vw", position: "sticky", top: "50px", height: "fit-content" }}>
+      <div className="stick" style={{ fontSize: "40px", width: "25vw", position: "sticky", top: "100px", height: "fit-content" }}>
         {title}
       </div>
       
