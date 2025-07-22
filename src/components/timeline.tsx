@@ -4,13 +4,13 @@ import { Chrono } from "react-chrono";
 function Timeline() {
   const items = [
   {
-    title: "March 2023-Present",
+    title: "March 2023-March 2025",
     cardTitle: "Digital Applied Learning and Innovation (DALI) Lab",
     cardSubtitle: "Software Developer",
   },
   {
     title: "June 2024-August 2024",
-    cardTitle: "Forum Systems",
+    cardTitle: "Quantum Gears",
     cardSubtitle: "Software Developer",
   },
   {
