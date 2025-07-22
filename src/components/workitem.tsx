@@ -1,4 +1,4 @@
-import { List, ListItem, ListItemText, Modal } from "@mui/material";
+import { Modal } from "@mui/material";
 import CSS from "csstype";
 import React from "react";
 
