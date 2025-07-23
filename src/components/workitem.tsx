@@ -114,7 +114,7 @@ const modalstyles: CSS.Properties = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: "60vw",
+  width: "30%",
   height: "fit-content",
   border: "2px solid",
   backgroundColor: 'white',

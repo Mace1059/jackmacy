@@ -60,7 +60,7 @@ const styles: CSS.Properties = {
 
 const stickyStyle: CSS.Properties = {
   fontSize: "40px",
-  width: "25vw",
+  width: "25%",
   position: "sticky",
   top: "110px",
   height: "fit-content",

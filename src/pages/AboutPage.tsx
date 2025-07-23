@@ -55,7 +55,7 @@ function AboutPage() {
 // Floating image style
 const floatingImageStyle: CSS.Properties = {
   float: "right",
-  width: "400px",
+  width: "30rem",
   height: "auto",
   marginLeft: "4rem",
   marginBottom: "2rem",
