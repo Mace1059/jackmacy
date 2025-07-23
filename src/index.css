@@ -36,6 +36,8 @@ body {
   /* flex-direction: column; */
   height: 100%;
   margin: 0;
+  background-color: white;
+  color: black;
 }
 
 h1 {
