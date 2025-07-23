@@ -51,78 +51,66 @@ function WorkItem({ role, title, description, image, accomplishments, av, links 
         slotProps={{
           backdrop: {
             style: {
-              cursor: "pointer"
+              cursor: "url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 height=%2224%22 width=%2224%22><text x=%220%22 y=%2215%22 font-size=%2216%22>✖</text></svg>') 12 12, auto"
             }
           }
         }}
       >
-        <div style={{ ...modalstyles, position: "relative", paddingTop: "3rem" }}>
+        <div style={{ ...modalstyles }}>
           
-          {/* Close Button */}
-          <button
-            onClick={handleClose}
+          <div style={{ fontWeight: "bold", fontSize: "30px"}}>
+            {title}
+          </div>
+          <div style={{ fontWeight: "bold", fontSize: "20px", marginBottom: "1rem", textTransform: "uppercase", 
+            color: "rgb(0, 105, 62)"}}>
+            {role}
+          </div>
+
+          {/* <div
             style={{
-              position: "absolute",
-              top: "0.5rem",
-              right: "0.5rem",
-              fontSize: "1.5rem",
-              border: "none",
-              background: "transparent",
-              cursor: "pointer",
-              color: "gray",
-              zIndex: 10
-            }}
-            aria-label="Close"
-          >
-            ✖
-          </button>
-
-          {/* Scrollable Content Wrapper */}
-          <div style={{ overflowY: "auto" }}>
-            <div style={{ fontWeight: "bold", fontSize: "30px" }}>{title}</div>
-            <div style={{
-              fontWeight: "bold",
-              fontSize: "20px",
-              marginBottom: "1rem",
-              textTransform: "uppercase",
-              color: "rgb(0, 105, 62)"
+              width: "100%",
+              maxHeight: "300px",
+              maxWidth: "20rem",
+              overflow: "hidden",
+              float: "left",
             }}>
-              {role}
-            </div>
+            {image}
+          </div> */}
 
-            <div style={{ fontSize: "1.2rem" }}>{description}</div>
-
-            {accomplishments && (
-              <div style={{ fontSize: "1.2rem", marginTop: "2rem" }}>
-                <div style={{ fontWeight: "bold" }}>Key Accomplishments</div>
-                <ul>
-                  {accomplishments.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            <div style={{ fontSize: "1.2rem", marginTop: "1rem" }}>
-              {av && av}
-              {links && (
-                <div style={{ fontSize: "1.2rem" }}>
-                  <div style={{ display: "flex", flexDirection: "column" }}>
-                    {links.map((item, index) => (
-                      <a
-                        href={item}
-                        style={{ color: "rgb(0, 105, 62)" }}
-                        key={index}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {item}
-                      </a>
-                    ))}
+          <div style={{ fontSize: "1.2rem"}}>
+            {description}
+          </div>
+          {accomplishments && (
+            <div style={{ fontSize: "1.2rem", marginTop: "2rem"}}>
+                <>
+                  <div style={{fontWeight: "bold"}}>
+                    Key Accomplishments
                   </div>
+                  <ul>
+                    {accomplishments.map((item, index) => (
+                      <li key={index}>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              
+            </div>)
+          }
+          
+          <div style={{ fontSize: "1.2rem", marginTop: "1rem"}}>
+            {av ? av : null}
+
+            {links ? (
+            <div style={{ fontSize: "1.2rem"}}>
+                <div style={{display: "flex", flexDirection: "column"}}>
+                {links.map((item, index) => (
+                  <a href={item} style={{color: "rgb(0, 105, 62)"}} key={index} target="_blank">{item}</a>
+                ))}
                 </div>
-              )}
-            </div>
+              
+            </div>) 
+            : null}
           </div>
         </div>
       </Modal>
@@ -136,6 +124,7 @@ const modalstyles: CSS.Properties = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   maxHeight: "70%",
+  width: "50%",
   maxWidth: "60%",
   overflowY: "auto",
   overflowX: "hidden",
