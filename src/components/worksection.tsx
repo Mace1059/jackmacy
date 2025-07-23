@@ -67,6 +67,7 @@ const stickyStyle: CSS.Properties = {
   position: "sticky",
   top: "110px",
   height: "fit-content",
+  alignSelf: "flex-start",
   flexShrink: 0,
 };
 

@@ -8,7 +8,14 @@ function NavBar() {
   return (
       <Box sx={{ ...navbarStyles }}>
         <a href="/">
-          Jack Macy
+        <div style={{ display: "flex", alignItems: "center", flexDirection: "row", gap: "1rem" }}>
+          <img
+            src="/logo.svg"
+            alt="Jack Macy Logo"
+            style={{ width: "3rem", height: "3rem", marginRight: "1rem" }}
+          // Jack Macy
+          />
+          </div>
         </a>
         <nav style={{ flexDirection: "row", display: "flex", flex: 1, gap: "2rem", justifyContent: "flex-end", alignItems: "inherit", fontSize: "1.3rem"}}>
           <a href="/about">

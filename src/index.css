@@ -39,7 +39,7 @@ html, body {
   padding: 0;
   width: 100vw;      /* force full width */
   min-width: 100vw;  /* ensure it never shrinks */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   box-sizing: border-box;
   background-color: white;
   color: black;

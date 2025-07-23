@@ -36,10 +36,10 @@ function JoinPage() {
           flexDirection: "column",
           gap: "2rem",
         }}>
-          <div className="animate__animated animate__fadeInDown " style={{ fontSize: "70px" }}>
-            {`I'm \nJack Macy,`}
+          <div className="animate__animated animate__fadeInDown " style={{ fontSize: "100px" }}>
+            {`Jack Macy`}
           </div>
-          <div style={{ fontSize: "50px" }}>
+          <div style={{ fontSize: "50px", marginTop: "4rem" }}>
             I'm a recent graduate from <span style={{ color: "#00693e", fontWeight: "bold", fontFamily: "DartmouthRuzicka,Georgia,serif" }}>Dartmouth College</span> with degrees in
             <span style={{ fontWeight: "bold" }}> Computer Science</span> and
             <span style={{ fontWeight: "bold" }}> Economics + Mathematics</span>
@@ -76,7 +76,7 @@ function JoinPage() {
               "https://hbr.org/2024/08/how-one-major-healthcare-firm-became-the-leader-in-innovative-ai-use?ab=HP-hero-featured-image-1",
             ]}
           />
-          <WorkItem image={<img src={chambiar}></img>} title="Chambiar" role="Full Stack Developer"
+          <WorkItem image={<img src={chambiar}></img>} title="Chambiar AI" role="Full Stack AI Developer"
             description="Chambiar is a web application that allows underprivileged communities access AI interview video and audio bots for practice and career preparation. It scrapes the web for job postings and relevant news. Utilized Elevenlabs for audio generation, and Llama-2 for seamless UI
 navigation. Built with a React Typescript frontend, Flask backend, and MongoDB database. Hired as a freelance developer to build a functional MVP in 5 months."
             accomplishments={[
@@ -95,7 +95,7 @@ navigation. Built with a React Typescript frontend, Flask backend, and MongoDB d
         </WorkSection>
 
         <WorkSection title="Computer Science Work">
-          <WorkItem image={<img src={bond}></img>} title="Bond" role="Student"
+          <WorkItem image={<img src={bond}></img>} title="Bond: DIY AI Agent" role="Full Stack AI Developer"
             description="Bond is a DIY AI Agent on our custom SaaS platform that leverages a simple UML UI. In its current state, it effectively manipulates user data. It uses a React Typescript frontend, Flask backend, and a novel infrastructure for UML-based flows. Bond can execute its own code in a safe environment in order to accomplish specific tasks. Created in CS98 at Dartmouth College."
             accomplishments={[
               "Achieved a functional MVP in 20 weeks",
@@ -112,7 +112,7 @@ navigation. Built with a React Typescript frontend, Flask backend, and MongoDB d
             ]}
           />
 
-          <WorkItem image={<img src={rpp}></img>} title="Risk Budgeting Portfolio Algorithm" role="Student Research"
+          <WorkItem image={<img src={rpp}></img>} title="Risk Budgeting Portfolio Algorithm" role="Research"
             description="Designed a new portfolio optimization algorithm in Python that uses a risk budgeting model to return the optimal equity risk
 contribution that maximizes short-run returns. It uses cyclical coordinate descent to solve the optimization problem with adjustable hyperparameters for time data. Created in the culminating experience Econ 66: Topics in Finance at Dartmouth College. Worked with award winning economist Tomas Jagelka. Coded in python and used pandas, numpy, and scipy libraries."
             accomplishments={[
@@ -127,8 +127,8 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
           <WorkItem
             image={<img src={mgame} alt="mGame" />}
             title="mGame"
-            role="DALI Full Stack Developer"
-            description="A React + Firebase application designed to help connect patients with their providers during their path to recovery. Characterized by a simple UI and easy-to-follow metrics calculated through a weekly check-up. Deployed and shipped to partners in May 2023. Created in partnership with the Dartmouth Hitchcock Medical Center."
+            role="Full Stack Developer"
+            description="A React Typescript + Firebase DALI application designed to help connect patients with their providers during their path to recovery. Characterized by a simple UI and easy-to-follow metrics calculated through a weekly check-up. Deployed and shipped to partners in May 2023. Created in partnership with the Dartmouth Hitchcock Medical Center."
             accomplishments={[
               "Firebase backend integration",
               "UI Typescript overhaul",
@@ -141,8 +141,8 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
             ]}
           />
 
-          <WorkItem image={<img src={plastic}></img>} title="PlastiCycle" role="DALI Full Stack Developer"
-            description="A React Native + MongoDB application designed to encourage students to recycle through a tamagotchi-inspired “Plasty” by scanning the plastic recycling symbol found on plastic products. Used a Pytorch model to quickly determine polymer and educate the user on its properties and correct recycling habits. Created in partnership with the Dartmouth Chemistry Department."
+          <WorkItem image={<img src={plastic}></img>} title="PlastiCycle" role="Full Stack/ML Engineer"
+            description="A React Native + MongoDB DALI application designed to encourage students to recycle through a tamagotchi-inspired “Plasty” by scanning the plastic recycling symbol found on plastic products. Used a Pytorch model to quickly determine polymer and educate the user on its properties and correct recycling habits. Created in partnership with the Dartmouth Chemistry Department."
             accomplishments={[
               "Achieved 83% accuracy on polymer classification using a Pytorch model",
               "Accurately implemented figma designs according to the CEO's vision",
@@ -154,8 +154,8 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
               "https://github.com/dali-lab/plastic-sorting-backend"
             ]}
           />
-          <WorkItem image={<img src={inforest}></img>} title="InForest" role="DALI Full Stack Developer" 
-            description="A React + Zustand application that utilized the Google Maps API to plot and track agricultural data. Data is persistent and saved for future use without the need for wifi. Deployed and shipped in May 2024. Created in partnership with Professor Ong's Department of Agriculture at Dartmouth College"
+          <WorkItem image={<img src={inforest}></img>} title="InForest" role="Full Stack Developer" 
+            description="A React Typescript + Zustand application utilizing the Google Maps API to plot and track agricultural data. Data is persistent and saved for future use without the need for wifi. Deployed and shipped in May 2024. Created in partnership with Professor Ong's Department of Agriculture at Dartmouth College"
             accomplishments={[
               "Reformating frontend after external developer refactored the codebase",
               "Implemented Zustand functionality for state management",
@@ -168,7 +168,7 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
             ]}
           />
 
-          <WorkItem image={<img src={yalnix}></img>} title="Yalnix Operating System" role="Student"
+          <WorkItem image={<img src={yalnix}></img>} title="Yalnix Operating System" role="Systems Engineer"
             description="Implemented the Yalnix operating system, a Unix-like operating system designed for educational purposes. Developed in C and assembly language, Yalnix provides a simple yet powerful environment for learning about operating systems. It includes features such as process management, memory management, and file systems. Completed in CS58: Operating Systems at Dartmouth College."
             accomplishments={[
               "Implemented Yalnix according to the specifications provided in the course materials",
@@ -180,7 +180,7 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
             ]}
           />
 
-          <WorkItem image={<img src={TSE}></img>} title="Tiny Search Engine" role="Student"
+          <WorkItem image={<img src={TSE}></img>} title="Tiny Search Engine" role="Software Developer"
             description="Implemented a Tiny Search Engine (TSE) that indexes and searches a collection of web pages. The TSE is designed to be efficient and scalable, allowing for quick retrieval of relevant information. The crawler module crawls the web starting at a certain webpage until a depth has been reached, caching the pages. The indexer module reads document files produced by the crawler and writes the index to a file. The querier satisfies the search query using the index file produced by the indexer. Completed in CS50: Introduction to Computer Science at Dartmouth College."
             accomplishments={[
               "Implemented the crawler, indexer, and querier modules according to the specifications provided in the course materials.",
@@ -192,7 +192,7 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
             ]}
           />
 
-          <WorkItem image={<img src={nuggets}></img>} title="Nuggets" role="Student"
+          <WorkItem image={<img src={nuggets}></img>} title="Nuggets" role="Software Developer"
             description="Implemented Nuggets, a multiplayer exploration game which utilizes a client and a server. The server maintains the game states and handles player interactions and game mechanics, while the clients display the game to a user. Completed as the final project of CS50: Software Design and Implementation at Dartmouth College."
             accomplishments={[
               "Notably, individually implemented light mechanics upon entering a room according to the specs",
@@ -207,7 +207,7 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
             ]}
           />
 
-          <WorkItem image={<img src={matte}></img>} title="Zero-Shot Image Matting with HQ-SAM" role="Student Research" 
+          <WorkItem image={<img src={matte}></img>} title="Zero-Shot Image Matting with HQ-SAM" role="Research" 
             description="Fed resulting zero-shot image segmentations from HQ-SAM to a binary value image matte algorithm to produce zero-shot well-segmented image matteing. Created a short report, earning 100% on the final project.  Created in CS89.32: Multimodal Generative AI at Dartmouth College."
             accomplishments={[
               'Earned a faculty citation for academic excellence: "This is a graduate-level course that covers a wide range of advanced topics in Natural Language Processing, Computer Vision, Audio Signal Processing, Computer Graphics, and Large Language Models. Jack T. Macy performed exceptionally well. For the term project, Jack T. Macy and his teammate successfully reproduced the results from the paper Segment Anything in High Quality, NeurIPS 2023. Additionally, they extended the HQ-SAM by integrating zero-shot image matting with MGMatting to improve segmentation results for fine-grained features. The approach demonstrates strong potential, especially in applications requiring high-quality segmentation and matting."',
@@ -217,7 +217,7 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
             ]}
           />
 
-          <WorkItem image={<img src={Markov}></img>} title="Hidden Markov Model POS Tagger" role="Student" 
+          <WorkItem image={<img src={Markov}></img>} title="Hidden Markov Model POS Tagger" role="Software Developer" 
             description="Built a Hidden Markov Model (HMM) Part-of-Speech (POS) tagger that uses the Viterbi algorithm to find the most likely sequence of POS tags for a given sentence. The HMM is trained on a corpus of annotated sentences and can be used to tag new sentences. Completed in CS10: Problem Solving via Object Oriented Programming at Dartmouth College."
             accomplishments={[
               "Implemented the HMM POS tagger according to the specifications provided in the course materials.",
@@ -228,7 +228,7 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
           />
           <WorkItem image={<img src={comingsoon}></img>} title="BrackIt!" role="Full Stack Developer" description="An educational tournament game that keeps students engaged for longer. Coming Soon!"></WorkItem>
 
-          <WorkItem image={<img src={logo}></img>} title="Personal Website" role="Frontend Engineer" description="Welcome!"
+          <WorkItem image={<img src={logo}></img>} title="Personal Website" role="Full Stack Developer" description="Welcome!"
             accomplishments={[
               "Designed and developed a personal website using React Typescript and Material UI",
               "Implemented responsive design for optimal viewing on various devices (try changing the window size!)",
@@ -239,7 +239,7 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
         </WorkSection>
 
         <WorkSection title="Economics + Mathematics Work">
-          <WorkItem image={<img src={dartmouth}></img>} title="Econ 66: Topics in Finance Final Project" role="Student Research" 
+          <WorkItem image={<img src={dartmouth}></img>} title="Budgeting Equity Risk to Achieve Optimal Short-Run Returns" role="Research" 
                       description="Designed a new portfolio optimization algorithm in Python that uses a risk budgeting model to return the optimal equity risk
 contribution that maximizes short-run returns. It uses cyclical coordinate descent to solve the optimization problem with adjustable hyperparameters for time data. Created in the culminating experience Econ 66: Topics in Finance at Dartmouth College. Worked with award winning econometrist Tomas Jagelka. Coded in python and used pandas, numpy, and scipy libraries."
             accomplishments={[
@@ -251,7 +251,7 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
             ]}
           />
           
-          <WorkItem image={<img src={options}></img>} title="Theoretical Options Pricing Research" role="Student Research" 
+          <WorkItem image={<img src={options}></img>} title="Theoretical Options Pricing Research" role="Research" 
             description="This paper proposes a new method for pricing options by reinvesting dividends and changing contract size and strike price. The option will thus retain its true value. While discovered on our own, it aligns with prior work done by Gaske and Merton with the added bonus of a Monte Carlo experiment. Completed as a final project in Math 86: Mathematical Finance at Dartmouth College."
             accomplishments={[
               "Independently rediscovered a true theoretical options pricing model",
@@ -265,9 +265,9 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
             ]}
           />
 
-          <WorkItem image={<img src={dartmouth}></img>} title="Econometrics Final Project" role="Student Research"
+          <WorkItem image={<img src={dartmouth}></img>} title="Econometrics Final Project" role="Research"
             description="Used a baseline and follow up survey of Canadian high schoolers to analyze the effect of stress, impulsivity, student debt, and number of children on
-sleeping habits. Use several econometric techniques for robustness and to determine causality and remove biases. Found 100% joint significance of all variables used in the regression."
+sleeping habits. Use several econometric techniques for robustness and to determine causality and remove biases. Found 100% joint significance of all variables used in the regression. Completed in Econ 20: Econometrics at Dartmouth College."
             accomplishments={[
               "Wrote robust Stata code for regression analysis",
               "Successfully removed biases and determined causality",
