@@ -22,6 +22,7 @@ import bond from "/bond.png"
 import rpp from "/rpp.png"
 import lodj from "/lodjcroo.png"
 import nuggets from "/nuggets.png"
+import logo from "/logo.svg";
 
 import Timeline from "../components/timeline";
 
@@ -125,7 +126,7 @@ function JoinPage() {
             accomplishments={[
               "Achieved a functional MVP in 20 weeks",
               "Successfully developed over 20 data manipulation tools",
-              "Can easily structure and unstructure data",
+              "Can easily interchange structured and unstructured data",
               "Reusable code execution framework",
             ]}
             av="Backend is currently down for cost-saving reasons. Please refer to the video demo."
@@ -139,7 +140,7 @@ function JoinPage() {
 
           <WorkItem image={<img src={rpp}></img>} title="Risk Budgeting Portfolio Algorithm" role="Student Research"
             description="Designed a new portfolio optimization algorithm in Python that uses a risk budgeting model to return the optimal equity risk
-contribution that maximizes short-run returns. It uses cyclical coordinate descent to solve the optimization problem with adjustable hyperparameters for time data. Created in the culminating experience Econ 66: Topics in Finance at Dartmouth College. Worked with award winning econometrist Tomas Jagelka. Coded in python and used pandas, numpy, and scipy libraries."
+contribution that maximizes short-run returns. It uses cyclical coordinate descent to solve the optimization problem with adjustable hyperparameters for time data. Created in the culminating experience Econ 66: Topics in Finance at Dartmouth College. Worked with award winning economist Tomas Jagelka. Coded in python and used pandas, numpy, and scipy libraries."
             accomplishments={[
               "Designed a novel risk budgeting portfolio algorithm for short-run returns",
               'Earned a faculty citation for academic excellence: "Jack creatively combined his knowledge of computer sciences with economic intuitions to propose a novel take on optimal portfolio construction. His enthusiastic in-class participation enriched the seminar and contributed to the learning of his classmates, and to mine also."',
@@ -181,14 +182,15 @@ navigation. Built with a React Typescript frontend, Flask backend, and MongoDB d
             accomplishments={[
               "Implemented the Crawler, Indexer, and Querier modules according to the specifications provided in the course materials.",
             ]}
-            av="Repository private due to course requirements and Dartmouth College policies. In the process of transferring ownership of codebase."
+            av="Repository private due to course requirements and Dartmouth College policies. Code tour available."
             links={[
+              "https://github.com/CS50DartmouthSP24/tse-Dartmace",
               "https://www.cs.dartmouth.edu/~cs50/Lectures/search/"
             ]}
           />
 
           <WorkItem image={<img src={nuggets}></img>} title="Nuggets" role="Student"
-            description="Implemented Nuggets, a multiplayer exploration game which utilizes a client and a server. The server maintains the game states and handles player interactions and game mechanics, while the clients display the game to a user. Completed as the final prohject of CS50: Software Design and Implementation at Dartmouth College."
+            description="Implemented Nuggets, a multiplayer exploration game which utilizes a client and a server. The server maintains the game states and handles player interactions and game mechanics, while the clients display the game to a user. Completed as the final project of CS50: Software Design and Implementation at Dartmouth College."
             accomplishments={[
               "Notably, individually implemented light mechanics upon entering a room according to the specs",
               "Successfully implemented client and server according to the specs",
@@ -203,7 +205,7 @@ navigation. Built with a React Typescript frontend, Flask backend, and MongoDB d
           />
 
           <WorkItem image={<img src={matte}></img>} title="Zero-Shot Image Matting with HQ-SAM" role="Student Research" 
-            description="Fed resulting zero-shot image segmentations from HQ-SAM to a binary value image matte algorithm to produce zero-shot well-segmented image matteing. Created a short report, earning an 100% on the final project.  Created in CS89.32: Multimodal Generative AI at Dartmouth College."
+            description="Fed resulting zero-shot image segmentations from HQ-SAM to a binary value image matte algorithm to produce zero-shot well-segmented image matteing. Created a short report, earning 100% on the final project.  Created in CS89.32: Multimodal Generative AI at Dartmouth College."
             accomplishments={[
               'Earned a faculty citation for academic excellence: "This is a graduate-level course that covers a wide range of advanced topics in Natural Language Processing, Computer Vision, Audio Signal Processing, Computer Graphics, and Large Language Models. Jack T. Macy performed exceptionally well. For the term project, Jack T. Macy and his teammate successfully reproduced the results from the paper Segment Anything in High Quality, NeurIPS 2023. Additionally, they extended the HQ-SAM by integrating zero-shot image matting with MGMatting to improve segmentation results for fine-grained features. The approach demonstrates strong potential, especially in applications requiring high-quality segmentation and matting."',
             ]}
@@ -239,7 +241,7 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
 
 
           <WorkItem image={<img src={dartmouth}></img>} title="Econometrics Final Project" role="Student Research"
-            description="Used a baseline and follow up survey of Canadian high schoolers to analyzes the effect of stress, impulsivity, student debt, and number of children on
+            description="Used a baseline and follow up survey of Canadian high schoolers to analyze the effect of stress, impulsivity, student debt, and number of children on
 sleeping habits. Use several econometric techniques for robustness and to determine causality and remove biases. Found 100% joint significance of all variables used in the regression."
             accomplishments={[
               "Wrote robust Stata code for regression analysis",
@@ -251,7 +253,7 @@ sleeping habits. Use several econometric techniques for robustness and to determ
             ]}
           />
           <WorkItem image={<img src={options}></img>} title="Theoretical Options Pricing Research" role="Student Research" 
-            description="This paper proposes a new method for pricing options by reinvesting divdends and changing contract size and strike price. The option will thus retain its true value. While discovered on our own, it aligns with prior work done by Gaske and Merton with the added bonus of a Monte Carlo experiment. Completed as a final project in Math 86: Mathematical Finance at Dartmouth College."
+            description="This paper proposes a new method for pricing options by reinvesting dividends and changing contract size and strike price. The option will thus retain its true value. While discovered on our own, it aligns with prior work done by Gaske and Merton with the added bonus of a Monte Carlo experiment. Completed as a final project in Math 86: Mathematical Finance at Dartmouth College."
             accomplishments={[
               "Independently rediscovered a true theoretical options pricing model",
               "Utilized Monte Carlo methods to simulate the pricing model",
@@ -286,9 +288,9 @@ sleeping habits. Use several econometric techniques for robustness and to determ
             description="Designed the Lodj Croo logo for Dartmouth First Year Trips in 2024."
           />
           <WorkItem image={<img src={mural}></img>} title="Sigma Nu Mural" role="Creative Lead"
-            description="Designed the painted a mural for Dartmouth's Sigma Nu fraternity, incorporating aspects of our history into the design. Completed in 48 hours."
+            description="Designed and painted a mural for Dartmouth's Sigma Nu fraternity, incorporating aspects of our history into the design. Completed in 48 hours."
           />
-          <WorkItem image={<img></img>} title="Personal Website" role="Frontend Engineer" description="Welcome!"
+          <WorkItem image={<img src={logo}></img>} title="Personal Website" role="Frontend Engineer" description="Welcome!"
             accomplishments={[
               "Designed and developed a personal website using React Typescript and Material UI",
               "Implemented responsive design for optimal viewing on various devices (try changing the window size!)",
