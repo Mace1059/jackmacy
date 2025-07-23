@@ -17,7 +17,7 @@ function AboutPage() {
             My name is Jack Macy, I'm 22 years old and grew up in Westwood,
             Massachusetts. I'm a recent graduate from Dartmouth College with a
             double major in Computer Science and Economics modified with
-            Mathematics. During my undergraduate, I was a full time Full-Stack Developer
+            Mathematics. During my undergraduate, I was a full time Full Stack Developer
             for Dartmouth's Applied Learning and Innovation (DALI) Lab and
             President of Dartmouth's Sigma Nu Fraternity. I was also actively involved in Dartmouth First Year Trips (FTY) as
             both a Trip Leader and a volunteer at the Moosilauke Ravine Lodge as
@@ -38,9 +38,9 @@ function AboutPage() {
             engineering, full stack engineering, and economic modeling. I have a
             strong background in Python, Java, React Typescript, PyTorch, Git,
             backend support, and Excel. I have taken advanced Computer Science classes such as 
-            Randomized Algorithms and Operating Systems, and I sought to modify my Economic major with Mathematics for a 
-            better quantitative background. Thus, I have accelerated multivariable calculus, probability, linear algebra, mathematical finance, and combinatorics in my toolbelt.
-            I am currently looking for a full-time job and would be grateful to discuss my qualifications further.
+            Randomized Algorithms and Operating Systems and sought to modify my Economic major with Mathematics for a 
+            better quantitative background. Thus, I have accelerated a multivariable calculus, probability, linear algebra, mathematical finance, 
+            and combinatorics background in my toolbelt. I am currently looking for a full time job and would be grateful to discuss my qualifications further.
           </p>
           <p style={{ marginTop: "10rem" }}>
             Please feel free to check out my <a href={"https://drive.google.com/file/d/1xy2tZYP352A0zsIK8n7ziZMD7sJOYHDK/view?usp=sharing"} target="_blank" style={{color: "#00693e", fontWeight: "bold"}}>resume</a> and

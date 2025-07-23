@@ -40,8 +40,8 @@ function JoinPage() {
             {`Jack Macy`}
           </div>
           <div style={{ fontSize: "50px", marginTop: "4rem" }}>
-            I'm a recent graduate from <span style={{ color: "#00693e", fontWeight: "bold", fontFamily: "DartmouthRuzicka,Georgia,serif" }}>Dartmouth College</span> with degrees in
-            <span style={{ fontWeight: "bold" }}> Computer Science</span> and
+            I'm a recent graduate from <span style={{ color: "#00693e", fontWeight: "bold", fontFamily: "DartmouthRuzicka,Georgia,serif" }}>Dartmouth College</span> with a B.A in
+            <span style={{ fontWeight: "bold" }}> Computer Science</span> and a B.A.
             <span style={{ fontWeight: "bold" }}> Economics + Mathematics</span>
           </div>
         </div>
@@ -63,8 +63,8 @@ function JoinPage() {
         </div>
 
         <WorkSection title="Internships">
-          <WorkItem image={<img src={forumsys}></img>} title="SecureGPT" role="AI Developer" 
-            description="Worked the SecureGPT LLM gateway, an application allowing for safe and secure interactions with an LLM through data obfuscation. Added excel functionality through the creation of a code self-execution framework leveraging python libraries like pandas and scikit. Utilizes a dual-model preprocessor for nonnumeric data and a Chain of Thought model for data analysis. Responsible for mentoring other interns and attending daily team meetings. Created by Quantum Gears at Forum Systems."
+          <WorkItem image={<img src={forumsys}></img>} title="SecureGPT Multi-LLM Gateway" role="AI Developer" 
+            description="Worked on the SecureGPT Multi-LLM Gateway, an application allowing for safe and secure interactions with an LLM through data obfuscation. Added excel functionality through the creation of a code self-execution framework leveraging python libraries like pandas and scikit. Utilizes a dual-model preprocessor for nonnumeric data and a Chain of Thought model for data analysis. Responsible for mentoring other interns and attending daily team meetings. Created by Quantum Gears at Forum Systems."
             accomplishments={[
               "Spearheaded a chain-of-thought architecture for statistical analysis within Excel sheets, improving a gpt-4 baseline by 11%",
               "Pitched and designed an efficient dual-embedding file preprocessor, decreasing company-wide testing times by 93%",
@@ -76,7 +76,7 @@ function JoinPage() {
               "https://hbr.org/2024/08/how-one-major-healthcare-firm-became-the-leader-in-innovative-ai-use?ab=HP-hero-featured-image-1",
             ]}
           />
-          <WorkItem image={<img src={chambiar}></img>} title="Chambiar AI" role="Full Stack AI Developer"
+          <WorkItem image={<img src={chambiar}></img>} title="Chambiar: AI Interview Bot" role="Full Stack AI Developer"
             description="Chambiar is a web application that allows underprivileged communities access AI interview video and audio bots for practice and career preparation. It scrapes the web for job postings and relevant news. Utilized Elevenlabs for audio generation, and Llama-2 for seamless UI
 navigation. Built with a React Typescript frontend, Flask backend, and MongoDB database. Hired as a freelance developer to build a functional MVP in 5 months."
             accomplishments={[
@@ -121,23 +121,6 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
             ]}
             links={[
               "https://github.com/Mace1059/SushiTuesday"
-            ]}
-          />
-          
-          <WorkItem
-            image={<img src={mgame} alt="mGame" />}
-            title="mGame"
-            role="Full Stack Developer"
-            description="A React Typescript + Firebase DALI application designed to help connect patients with their providers during their path to recovery. Characterized by a simple UI and easy-to-follow metrics calculated through a weekly check-up. Deployed and shipped to partners in May 2023. Created in partnership with the Dartmouth Hitchcock Medical Center."
-            accomplishments={[
-              "Firebase backend integration",
-              "UI Typescript overhaul",
-              "Deployed and shipped to partners in May 2023",
-            ]}
-            av="Updated repository no longer accessible due to change in ownership. Code tour available."
-            links={[
-              "https://github.com/dali-lab/mgame-frontend",
-              "https://github.com/dali-lab/mgame-backend"
             ]}
           />
 
@@ -226,6 +209,24 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
               "https://drive.google.com/drive/folders/1M1K6YRsj0fLEpHaTSZS6R8nEHRnRFmMh?usp=drive_link"
             ]}
           />
+
+          <WorkItem
+            image={<img src={mgame} alt="mGame" />}
+            title="mGame"
+            role="Full Stack Developer"
+            description="A React Typescript + Firebase DALI application designed to help connect patients with their providers during their path to recovery. Characterized by a simple UI and easy-to-follow metrics calculated through a weekly check-up. Deployed and shipped to partners in May 2023. Created in partnership with the Dartmouth Hitchcock Medical Center."
+            accomplishments={[
+              "Firebase backend integration",
+              "UI Typescript overhaul",
+              "Deployed and shipped to partners in May 2023",
+            ]}
+            av="Updated repository no longer accessible due to change in ownership. Code tour available."
+            links={[
+              "https://github.com/dali-lab/mgame-frontend",
+              "https://github.com/dali-lab/mgame-backend"
+            ]}
+          />
+
           <WorkItem image={<img src={comingsoon}></img>} title="BrackIt!" role="Full Stack Developer" description="An educational tournament game that keeps students engaged for longer. Coming Soon!"></WorkItem>
 
           <WorkItem image={<img src={logo}></img>} title="Personal Website" role="Full Stack Developer" description="Welcome!"
