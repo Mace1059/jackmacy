@@ -22,23 +22,22 @@ function AboutPage() {
             President of Dartmouth's Sigma Nu Fraternity. I was also actively involved in Dartmouth First Year Trips (FTY) as
             both a Trip Leader and a volunteer at the Moosilauke Ravine Lodge as
             a Lodj Crooling. I was the treasurer for Tyger Society, a freelance engineer, 
-            and a campus DJ named <span style={{ fontStyle: "italic" }}>DJ 2%</span> after all the milk I used 
-            to drink. However, I recently learned I'm probably lactose intolerant.
+            and a DJ.
           </p>
           <p>
             In my free time, I enjoy coding up my ideas, 
-            DJing, painting, playing cribbage, video editing, and exploring the outdoors. Athough weather dependent up in the Northeast, I love to ski, skate,
-            play golf, hike, and paddle. I also enjoy reading market data, learning about personal finance, and investing my savings. Naturally, I love
+            playing cribbage, video editing, DJing, painting, and exploring the outdoors. Athough weather dependent in the Northeast, I also love to ski, skate,
+            play golf, hike, and paddle. I enjoy reading market data, learning about personal finance, and investing my savings. Naturally, I love
             spending time with friends, family, and those I care about. I
             recently embarked on a post-graduate cross-country road trip with
             friends, visiting national parks and cities across the United States, and I always look forward to the opportunity to travel somewhere new.
           </p>
           <p>
             I excel at Python programming, algorithm design, AI fine-tuning and
-            engineering, full stack engineering, and economic modeling. I have a
+            engineering, full stack development, and economic modeling. I have a
             strong background in Python, Java, React Typescript, PyTorch, Git,
-            backend support, and Excel. I have taken advanced Computer Science classes such as 
-            Randomized Algorithms and Operating Systems and sought to modify my Economic major with Mathematics for a 
+            backend support, and Excel. I have taken advanced computer science classes such as 
+            randomized algorithms and operating systems and sought to modify my economic major with mathematics for a 
             better quantitative background. Thus, I have accelerated a multivariable calculus, probability, linear algebra, mathematical finance, 
             and combinatorics background in my toolbelt. I am currently looking for a full time job and would be grateful to discuss my qualifications further.
           </p>
