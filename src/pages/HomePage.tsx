@@ -13,7 +13,7 @@ import plastic from "/plastic.png"
 import forumsys from "/forumsys.jpg"
 import chambiar from "/chambiar.svg"
 import comingsoon from "/comingsoon.jpg"
-import inforest from "/inforest.jpg"
+import inforest from "/inforest.png"
 import dartmouth from "/dartmouth.jpg"
 import options from "/options.png"
 import matte from "/matte.png"
@@ -37,10 +37,10 @@ function JoinPage() {
           gap: "2rem",
         }}>
           <div className="animate__animated animate__fadeInDown " style={{ fontSize: "70px" }}>
-            {`Hey there, I'm \nJack Macy`}
+            {`I'm \nJack Macy,`}
           </div>
           <div style={{ fontSize: "50px" }}>
-            I'm a recent graduate from <span style={{ color: "#00693e", fontWeight: "bold", fontFamily: "DartmouthRuzicka,Georgia,serif" }}>Dartmouth College</span> with a double major in
+            I'm a recent graduate from <span style={{ color: "#00693e", fontWeight: "bold", fontFamily: "DartmouthRuzicka,Georgia,serif" }}>Dartmouth College</span> with degrees in
             <span style={{ fontWeight: "bold" }}> Computer Science</span> and
             <span style={{ fontWeight: "bold" }}> Economics + Mathematics</span>
           </div>
@@ -49,7 +49,7 @@ function JoinPage() {
 
       <div className="center" style={{ ...introStyles }}>
         <div style={{ display: "flex", flexDirection: "column", pointerEvents: "none", color: "black" }}>
-          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", alignSelf: "center", gap: "10px", marginBottom: "70px" }}>{`Check out my work experience  `}
+          <div style={{ display: "flex", flexDirection: "row", alignItems: "center", alignSelf: "center", gap: "10px", marginBottom: "70px" }}>{`Check out my recent work experience  `}
             <SouthOutlinedIcon></SouthOutlinedIcon>
           </div>
           <Timeline />
@@ -61,54 +61,10 @@ function JoinPage() {
         <div style={{ display: "flex", flexDirection: "row", alignItems: "center", alignSelf: "center", gap: "10px" }}>{`Check out my work below  `}
           <SouthOutlinedIcon></SouthOutlinedIcon>
         </div>
-        <WorkSection title="DALI Lab">
-          <WorkItem
-            image={<img src={mgame} alt="mGame" />}
-            title="mGame"
-            role="Full Stack Developer"
-            description="A React + Firebase application designed to help connect patients with their providers during their path to recovery. Characterized by a simple UI and easy-to-follow metrics calculated through a weekly check-up. Deployed and shipped to partners in May 2023. Created in partnership with the Dartmouth Hitchcock Medical Center."
-            accomplishments={[
-              "Firebase backend integration",
-              "UI Typescript overhaul",
-              "Deployed and shipped to partners in May 2023",
-            ]}
-            av="Updated repository no longer accessible due to change in ownership. Code tour available."
-            links={[
-              "https://github.com/dali-lab/mgame-frontend",
-              "https://github.com/dali-lab/mgame-backend"
-            ]}
-          />
 
-          <WorkItem image={<img src={plastic}></img>} title="PlastiCycle" role="Full Stack Developer"
-            description="A React Native + MongoDB application designed to encourage students to recycle through a tamagotchi-inspired “Plasty” by scanning the plastic recycling symbol found on plastic products. Used a Pytorch model to quickly determine polymer and educate the user on its properties and correct recycling habits. Created in partnership with the Dartmouth Chemistry Department."
-            accomplishments={[
-              "Achieved 83% accuracy on polymer classification using a Pytorch model",
-              "Accurately implemented figma designs according to the CEO's vision",
-              "Effectively educated users on recycling habits",
-            ]}
-            av="Updated repository no longer accessible due to change in ownership. Code tour available."
-            links={[
-              "https://github.com/dali-lab/plastic-sorting-frontend",
-              "https://github.com/dali-lab/plastic-sorting-backend"
-            ]}
-          />
-          <WorkItem image={<img src={inforest}></img>} title="InForest" role="Full Stack Developer" 
-            description="A React + Zustand application that utilized the Google Maps API to plot and track agricultural data. Data is persistent and saved for future use without the need for wifi. Deployed and shipped in May 2024. Created in partnership with Professor Ong's Department of Agriculture at Dartmouth College"
-            accomplishments={[
-              "Reformating frontend after external developer refactored the codebase",
-              "Implemented Zustand functionality for state management",
-              "User testing and bug fixes",
-              "Adding final features and deploying to production in Spring 2024",
-            ]}
-            av="Updated repository no longer accessible due to change in ownership. Code tour available."
-            links={[
-              "https://github.com/dali-lab/inforest"
-            ]}
-          />
-        </WorkSection>
-        <WorkSection title="Computer Science Work">
-          <WorkItem image={<img src={forumsys}></img>} title="SecureGPT" role="Full Stack Developer" 
-          description="Worked on SecureGPT, an application allowing for safe and secure interactions with an LLM through data obfuscation. Added excel functionality through the creation of a code self-execution framework leveraging python libraries like pandas and scikit. Utilizes a dual-model preprocessor for nonnumeric data and a Chain of Thought model for data analysis. Responsible for mentoring other interns and attending daily team meetings. Created by Quantum Gears at Forum Systems."
+        <WorkSection title="Internships">
+          <WorkItem image={<img src={forumsys}></img>} title="SecureGPT" role="AI Developer" 
+            description="Worked the SecureGPT LLM gateway, an application allowing for safe and secure interactions with an LLM through data obfuscation. Added excel functionality through the creation of a code self-execution framework leveraging python libraries like pandas and scikit. Utilizes a dual-model preprocessor for nonnumeric data and a Chain of Thought model for data analysis. Responsible for mentoring other interns and attending daily team meetings. Created by Quantum Gears at Forum Systems."
             accomplishments={[
               "Spearheaded a chain-of-thought architecture for statistical analysis within Excel sheets, improving a gpt-4 baseline by 11%",
               "Pitched and designed an efficient dual-embedding file preprocessor, decreasing company-wide testing times by 93%",
@@ -119,8 +75,26 @@ function JoinPage() {
             links={[
               "https://hbr.org/2024/08/how-one-major-healthcare-firm-became-the-leader-in-innovative-ai-use?ab=HP-hero-featured-image-1",
             ]}
-          
           />
+          <WorkItem image={<img src={chambiar}></img>} title="Chambiar" role="Full Stack Developer"
+            description="Chambiar is a web application that allows underprivileged communities access AI interview video and audio bots for practice and career preparation. It scrapes the web for job postings and relevant news. Utilized Elevenlabs for audio generation, and Llama-2 for seamless UI
+navigation. Built with a React Typescript frontend, Flask backend, and MongoDB database. Hired as a freelance developer to build a functional MVP in 5 months."
+            accomplishments={[
+              "Achieved a functional MVP in 5 months",
+              "Worked in a scrum team of 3 developers with weekly sprints and effective work distribution",
+              "Implemented figma designs according to the CEO's vision",
+              "Created a custom audio generation pipeline using Elevenlabs",
+              "Implemented a Llama-2 API handler for seamless UI navigation",
+              "Received $300k in Google investment grants",
+              "Successfully accepted into the Workbox Future of Work accelerator program",
+            ]}
+            av="Repository no longer accessible due to change in ownership."
+          />
+
+
+        </WorkSection>
+
+        <WorkSection title="Computer Science Work">
           <WorkItem image={<img src={bond}></img>} title="Bond" role="Student"
             description="Bond is a DIY AI Agent on our custom SaaS platform that leverages a simple UML UI. In its current state, it effectively manipulates user data. It uses a React Typescript frontend, Flask backend, and a novel infrastructure for UML-based flows. Bond can execute its own code in a safe environment in order to accomplish specific tasks. Created in CS98 at Dartmouth College."
             accomplishments={[
@@ -149,20 +123,49 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
               "https://github.com/Mace1059/SushiTuesday"
             ]}
           />
-
-          <WorkItem image={<img src={chambiar}></img>} title="Chambiar" role="Full Stack Developer"
-            description="Chambiar is a web application that allows underprivileged communities access AI interview video and audio bots for practice and career preparation. It scrapes the web for job postings and relevant news. Utilized Elevenlabs for audio generation, and Llama-2 for seamless UI
-navigation. Built with a React Typescript frontend, Flask backend, and MongoDB database. Hired as a freelance developer to build a functional MVP in 5 months."
+          
+          <WorkItem
+            image={<img src={mgame} alt="mGame" />}
+            title="mGame"
+            role="DALI Full Stack Developer"
+            description="A React + Firebase application designed to help connect patients with their providers during their path to recovery. Characterized by a simple UI and easy-to-follow metrics calculated through a weekly check-up. Deployed and shipped to partners in May 2023. Created in partnership with the Dartmouth Hitchcock Medical Center."
             accomplishments={[
-              "Achieved a functional MVP in 5 months",
-              "Worked in a scrum team of 3 developers with weekly sprints and effective work distribution",
-              "Implemented figma designs according to the CEO's vision",
-              "Created a custom audio generation pipeline using Elevenlabs",
-              "Implemented a Llama-2 API handler for seamless UI navigation",
-              "Received $300k in Google investment grants",
-              "Successfully accepted into the Workbox Future of Work accelerator program",
+              "Firebase backend integration",
+              "UI Typescript overhaul",
+              "Deployed and shipped to partners in May 2023",
             ]}
-            av="Repository no longer accessible due to change in ownership."
+            av="Updated repository no longer accessible due to change in ownership. Code tour available."
+            links={[
+              "https://github.com/dali-lab/mgame-frontend",
+              "https://github.com/dali-lab/mgame-backend"
+            ]}
+          />
+
+          <WorkItem image={<img src={plastic}></img>} title="PlastiCycle" role="DALI Full Stack Developer"
+            description="A React Native + MongoDB application designed to encourage students to recycle through a tamagotchi-inspired “Plasty” by scanning the plastic recycling symbol found on plastic products. Used a Pytorch model to quickly determine polymer and educate the user on its properties and correct recycling habits. Created in partnership with the Dartmouth Chemistry Department."
+            accomplishments={[
+              "Achieved 83% accuracy on polymer classification using a Pytorch model",
+              "Accurately implemented figma designs according to the CEO's vision",
+              "Effectively educated users on recycling habits",
+            ]}
+            av="Updated repository no longer accessible due to change in ownership. Code tour available."
+            links={[
+              "https://github.com/dali-lab/plastic-sorting-frontend",
+              "https://github.com/dali-lab/plastic-sorting-backend"
+            ]}
+          />
+          <WorkItem image={<img src={inforest}></img>} title="InForest" role="DALI Full Stack Developer" 
+            description="A React + Zustand application that utilized the Google Maps API to plot and track agricultural data. Data is persistent and saved for future use without the need for wifi. Deployed and shipped in May 2024. Created in partnership with Professor Ong's Department of Agriculture at Dartmouth College"
+            accomplishments={[
+              "Reformating frontend after external developer refactored the codebase",
+              "Implemented Zustand functionality for state management",
+              "User testing and bug fixes",
+              "Adding final features and deploying to production in Spring 2024",
+            ]}
+            av="Updated repository no longer accessible due to change in ownership. Code tour available."
+            links={[
+              "https://github.com/dali-lab/inforest"
+            ]}
           />
 
           <WorkItem image={<img src={yalnix}></img>} title="Yalnix Operating System" role="Student"
@@ -178,9 +181,9 @@ navigation. Built with a React Typescript frontend, Flask backend, and MongoDB d
           />
 
           <WorkItem image={<img src={TSE}></img>} title="Tiny Search Engine" role="Student"
-            description="Implemented a Tiny Search Engine (TSE) that indexes and searches a collection of web pages. The TSE is designed to be efficient and scalable, allowing for quick retrieval of relevant information. The Crawler module crawls the web starting at a certain webpage until a depth has been reached, caching the pages. The Indexer module reads document files produced by the Crawler and writes the index to a file. The querier satisfies the search query using the index file produced by the indexer. Completed in CS50: Introduction to Computer Science at Dartmouth College."
+            description="Implemented a Tiny Search Engine (TSE) that indexes and searches a collection of web pages. The TSE is designed to be efficient and scalable, allowing for quick retrieval of relevant information. The crawler module crawls the web starting at a certain webpage until a depth has been reached, caching the pages. The indexer module reads document files produced by the crawler and writes the index to a file. The querier satisfies the search query using the index file produced by the indexer. Completed in CS50: Introduction to Computer Science at Dartmouth College."
             accomplishments={[
-              "Implemented the Crawler, Indexer, and Querier modules according to the specifications provided in the course materials.",
+              "Implemented the crawler, indexer, and querier modules according to the specifications provided in the course materials.",
             ]}
             av="Repository private due to course requirements and Dartmouth College policies. Code tour available."
             links={[
@@ -224,6 +227,15 @@ navigation. Built with a React Typescript frontend, Flask backend, and MongoDB d
             ]}
           />
           <WorkItem image={<img src={comingsoon}></img>} title="BrackIt!" role="Full Stack Developer" description="An educational tournament game that keeps students engaged for longer. Coming Soon!"></WorkItem>
+
+          <WorkItem image={<img src={logo}></img>} title="Personal Website" role="Frontend Engineer" description="Welcome!"
+            accomplishments={[
+              "Designed and developed a personal website using React Typescript and Material UI",
+              "Implemented responsive design for optimal viewing on various devices (try changing the window size!)",
+              "Integrated animations and interactive elements for enhanced user experience",
+            ]} 
+            links={["https://github.com/Mace1059/jackmacy"]}
+          />
         </WorkSection>
 
         <WorkSection title="Economics + Mathematics Work">
@@ -238,20 +250,7 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
               "https://drive.google.com/file/d/1NEZHah6yY1H4ohD8kq_XuQUX-CJyYzvt/view?usp=drive_link"
             ]}
           />
-
-
-          <WorkItem image={<img src={dartmouth}></img>} title="Econometrics Final Project" role="Student Research"
-            description="Used a baseline and follow up survey of Canadian high schoolers to analyze the effect of stress, impulsivity, student debt, and number of children on
-sleeping habits. Use several econometric techniques for robustness and to determine causality and remove biases. Found 100% joint significance of all variables used in the regression."
-            accomplishments={[
-              "Wrote robust Stata code for regression analysis",
-              "Successfully removed biases and determined causality",
-              "Implemented several econometric techniques for robustness, including an instrumental variable",
-            ]}
-            links={[
-              "https://drive.google.com/file/d/18NcFUKAmnv-w33fGwhy-LgOgyAHFOUtu/view?usp=sharing"
-            ]}
-          />
+          
           <WorkItem image={<img src={options}></img>} title="Theoretical Options Pricing Research" role="Student Research" 
             description="This paper proposes a new method for pricing options by reinvesting dividends and changing contract size and strike price. The option will thus retain its true value. While discovered on our own, it aligns with prior work done by Gaske and Merton with the added bonus of a Monte Carlo experiment. Completed as a final project in Math 86: Mathematical Finance at Dartmouth College."
             accomplishments={[
@@ -265,6 +264,20 @@ sleeping habits. Use several econometric techniques for robustness and to determ
               "https://drive.google.com/drive/folders/13rxIaK631rn8Wez1N4otLUTrjjL4hlAv?usp=sharing"
             ]}
           />
+
+          <WorkItem image={<img src={dartmouth}></img>} title="Econometrics Final Project" role="Student Research"
+            description="Used a baseline and follow up survey of Canadian high schoolers to analyze the effect of stress, impulsivity, student debt, and number of children on
+sleeping habits. Use several econometric techniques for robustness and to determine causality and remove biases. Found 100% joint significance of all variables used in the regression."
+            accomplishments={[
+              "Wrote robust Stata code for regression analysis",
+              "Successfully removed biases and determined causality",
+              "Implemented several econometric techniques for robustness, including an instrumental variable",
+            ]}
+            links={[
+              "https://drive.google.com/file/d/18NcFUKAmnv-w33fGwhy-LgOgyAHFOUtu/view?usp=sharing"
+            ]}
+          />
+
         </WorkSection>
 
         <WorkSection title="Creative Projects">
@@ -289,14 +302,6 @@ sleeping habits. Use several econometric techniques for robustness and to determ
           />
           <WorkItem image={<img src={mural}></img>} title="Sigma Nu Mural" role="Creative Lead"
             description="Designed and painted a mural for Dartmouth's Sigma Nu fraternity, incorporating aspects of our history into the design. Completed in 48 hours."
-          />
-          <WorkItem image={<img src={logo}></img>} title="Personal Website" role="Frontend Engineer" description="Welcome!"
-            accomplishments={[
-              "Designed and developed a personal website using React Typescript and Material UI",
-              "Implemented responsive design for optimal viewing on various devices (try changing the window size!)",
-              "Integrated animations and interactive elements for enhanced user experience",
-            ]} 
-            links={["https://github.com/Mace1059/jackmacy"]}
           />
 
         </WorkSection>

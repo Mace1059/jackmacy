@@ -29,32 +29,32 @@ function Timeline() {
     cardTitle: "The Bezanilla Lab",
     cardSubtitle: "Laboratory Technician",
   },
-  {
-    title: "September 2017-November 2021",
-    cardTitle: "Westwood Youth Soccer",
-    cardSubtitle: "Soccer Referee/Coach/Evaluator",
-  },
-  {
-    title: "June 2018-August 2021",
-    cardTitle: "Hale Reservation / Self Employed",
-    cardSubtitle: "Lifeguard + Swim Instructor",
-  },
-  {
-    title: "March 2020-September 2021",
-    cardSubtitle: "COVID Delivery Driver",
-    cardTitle: "Jin's Fine Asian Cuisine",  
-  },
-  {
-    title: "December 2018-March 2019",
-    cardSubtitle: "Youth Basketball Commentator",
-    cardTitle: "Westwood Youth Basketball",
-  },
-  {
-    title: "June 2017-Present",
-    cardTitle: "Self-Employed",
+  // {
+  //   title: "September 2017-November 2021",
+  //   cardTitle: "Westwood Youth Soccer",
+  //   cardSubtitle: "Soccer Referee/Coach/Evaluator",
+  // },
+  // {
+  //   title: "June 2018-August 2021",
+  //   cardTitle: "Hale Reservation / Self Employed",
+  //   cardSubtitle: "Lifeguard + Swim Instructor",
+  // },
+  // {
+  //   title: "March 2020-September 2021",
+  //   cardSubtitle: "COVID Delivery Driver",
+  //   cardTitle: "Jin's Fine Asian Cuisine",  
+  // },
+  // {
+  //   title: "December 2018-March 2019",
+  //   cardSubtitle: "Youth Basketball Commentator",
+  //   cardTitle: "Westwood Youth Basketball",
+  // },
+  // {
+  //   title: "June 2017-Present",
+  //   cardTitle: "Self-Employed",
   
-    cardSubtitle: "Tutor",
-  }
+  //   cardSubtitle: "Tutor",
+  // }
   
   ]
 
