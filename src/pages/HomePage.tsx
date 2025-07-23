@@ -47,7 +47,7 @@ function JoinPage() {
         </div>
       </div>
 
-      <div className="center" style={{ ...introStyles, margin: "20px 100px" }}>
+      <div className="center" style={{ ...introStyles }}>
         <div style={{ display: "flex", flexDirection: "column", pointerEvents: "none", color: "black" }}>
           <div style={{ display: "flex", flexDirection: "row", alignItems: "center", alignSelf: "center", gap: "10px", marginBottom: "70px" }}>{`Check out my work experience  `}
             <SouthOutlinedIcon></SouthOutlinedIcon>
