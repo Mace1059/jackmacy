@@ -27,6 +27,7 @@ function Timeline() {
   {
     title: "March 2022-June 2022",
     cardTitle: "The Bezanilla Lab",
+    cardSubtitle: "Laboratory Technician",
   },
   {
     title: "September 2017-November 2021",
@@ -60,7 +61,7 @@ function Timeline() {
 
 
   const fontSizes = {
-    cardSubtitle: '1.2rem',
+    cardSubtitle: '1.4rem',
     cardText: '1rem',
     cardTitle: '1.7rem',
     title: '1rem',

@@ -26,9 +26,9 @@ function WorkItem({ role, title, description, image, accomplishments, av, links 
       >
         <div style={{
           display: "flex",
-          height: "200px",
-          minHeight: "200px",
-          width: "auto",
+          flex: "1",
+          alignSelf: "center",
+          maxWidth: "90%",
           justifyContent: "center",
           alignItems: "center",
           overflow: "hidden"
@@ -96,7 +96,7 @@ function WorkItem({ role, title, description, image, accomplishments, av, links 
             <div style={{ fontSize: "1.2rem"}}>
                 <div style={{display: "flex", flexDirection: "column"}}>
                 {links.map((item, index) => (
-                  <a href={item} style={{color: "rgb(0, 105, 62)"}} key={index}>{item}</a>
+                  <a href={item} style={{color: "rgb(0, 105, 62)"}} key={index} target="_blank">{item}</a>
                 ))}
                 </div>
               
@@ -131,6 +131,7 @@ const modalstyles: CSS.Properties = {
 
 const styles: CSS.Properties = {
   display: "flex",
+  justifyContent: "flex-end",
   flexDirection: "column",
   fontSize: "20px",
   padding: "20px 20px",
@@ -138,6 +139,7 @@ const styles: CSS.Properties = {
   gap: "0.5rem",
   borderRadius: "17px",
   border: "2px solid",
+  height: "300px",
   borderColor: "rgba(135, 159, 170, 0.3)"
 }
 

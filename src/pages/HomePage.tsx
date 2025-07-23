@@ -37,7 +37,7 @@ function JoinPage() {
             {`Hey there, I'm \nJack Macy`}
           </div>
           <div style={{ fontSize: "50px" }}>
-            I'm a student at <span style={{ color: "#00693e", fontWeight: "bold", fontFamily: "DartmouthRuzicka,Georgia,serif" }}>Dartmouth College</span> studying
+            I'm a recent graduate from <span style={{ color: "#00693e", fontWeight: "bold", fontFamily: "DartmouthRuzicka,Georgia,serif" }}>Dartmouth College</span> with a double major in
             <span style={{ fontWeight: "bold" }}> Computer Science</span> and
             <span style={{ fontWeight: "bold" }}> Economics + Mathematics</span>
           </div>
@@ -69,17 +69,55 @@ function JoinPage() {
               "UI Typescript overhaul",
               "Deployed and shipped to partners in May 2023",
             ]}
-            av="Repository No Longer Accessible due to change in ownership."
+            av="Updated repository no longer accessible due to change in ownership. Code tour available."
             links={[
-"              https://github.com/dali-lab/mgame-frontend"
+              "https://github.com/dali-lab/mgame-frontend",
+              "https://github.com/dali-lab/mgame-backend"
             ]}
           />
-          <WorkItem image={<img src={plastic}></img>} title="PlastiCycle" role="Full Stack Developer" description="A React Native + MongoDB application designed to encourage students to recycle through a tamagotchi-inspired “Plasty” by scanning the plastic recycling symbol found on plastic products. Used a Pytorch model to quickly determine polymer and educate the user on its properties and correct recycling habits. Created in partnership with the Dartmouth Chemistry Department."></WorkItem>
-          <WorkItem image={<img src={inforest}></img>} title="InForest" role="Full Stack Developer" description="A React + Zustand application that utilized the Google Maps API to plot and track agricultural data. Data is persisted and saved for future use without the need for wifi. Deployed and shipped in May 2024. Created in partnership with Professor Ong's Department of Agriculture at Dartmouth College."></WorkItem>
 
+          <WorkItem image={<img src={plastic}></img>} title="PlastiCycle" role="Full Stack Developer"
+            description="A React Native + MongoDB application designed to encourage students to recycle through a tamagotchi-inspired “Plasty” by scanning the plastic recycling symbol found on plastic products. Used a Pytorch model to quickly determine polymer and educate the user on its properties and correct recycling habits. Created in partnership with the Dartmouth Chemistry Department."
+            accomplishments={[
+              "Achieved 83% accuracy on polymer classification using a Pytorch model",
+              "Accurately implemented figma designs according to the CEO's vision",
+              "Effectively educated users on recycling habits",
+            ]}
+            av="Updated repository no longer accessible due to change in ownership. Code tour available."
+            links={[
+              "https://github.com/dali-lab/plastic-sorting-frontend",
+              "https://github.com/dali-lab/plastic-sorting-backend"
+            ]}
+          />
+          <WorkItem image={<img src={inforest}></img>} title="InForest" role="Full Stack Developer" 
+            description="A React + Zustand application that utilized the Google Maps API to plot and track agricultural data. Data is persistent and saved for future use without the need for wifi. Deployed and shipped in May 2024. Created in partnership with Professor Ong's Department of Agriculture at Dartmouth College"
+            accomplishments={[
+              "Reformating frontend after external developer refactored the codebase",
+              "Implemented Zustand functionality for state management",
+              "User testing and bug fixes",
+              "Adding final features and deploying to production in Spring 2024",
+            ]}
+            av="Updated repository no longer accessible due to change in ownership. Code tour available."
+            links={[
+              "https://github.com/dali-lab/inforest"
+            ]}
+          />
         </WorkSection>
         <WorkSection title="Computer Science Work">
-          <WorkItem image={<img src={forumsys}></img>} title="SecureGPT" role="Full Stack Developer" description="An application allowing for safe and secure interactions with an LLM through data obfuscation. Added excel functionality through the creation of a code self-execution framework leveraging python libraries like pandas and scikit. Utilizes a dual-model preprocessor for nonnumeric data and a Chain of Thought model for data analysis. Created by Quantum Gears at Forum Systems."></WorkItem>
+          <WorkItem image={<img src={forumsys}></img>} title="SecureGPT" role="Full Stack Developer" 
+          description="Worked on SecureGPT, an application allowing for safe and secure interactions with an LLM through data obfuscation. Added excel functionality through the creation of a code self-execution framework leveraging python libraries like pandas and scikit. Utilizes a dual-model preprocessor for nonnumeric data and a Chain of Thought model for data analysis. Responsible for mentoring other interns and attending daily team meetings. Created by Quantum Gears at Forum Systems."
+            accomplishments={[
+              "Spearheaded a chain-of-thought architecture for statistical analysis within Excel sheets, improving a gpt-4 baseline by 11%",
+              "Pitched and designed an efficient dual-embedding file preprocessor, decreasing company-wide testing times by 93%",
+              "Redesigned system prompting to improve recall and precision scores for relevant Excel data during data retrieval",
+              "Performed system and regression testing to identify weaknesses in SecureGPT’s data obfuscation",
+            ]}
+            av="No repository or demo available."
+            links={[
+              "https://hbr.org/2024/08/how-one-major-healthcare-firm-became-the-leader-in-innovative-ai-use?ab=HP-hero-featured-image-1",
+            ]}
+          
+          />
           <WorkItem image={<img src={bond}></img>} title="Bond" role="Student"
             description="Bond is a DIY AI Agent on our custom SaaS platform that leverages a simple UML UI. In its current state, it effectively manipulates user data. It uses a React Typescript frontend, Flask backend, and a novel infrastructure for UML-based flows. Bond can execute its own code in a safe environment in order to accomplish specific tasks. Created in CS98 at Dartmouth College."
             accomplishments={[
@@ -96,34 +134,85 @@ function JoinPage() {
               "https://medium.com/@rebecca.e.ronai.25/bond-2a4a3c0a10ec"
             ]}
           />
-          <WorkItem image={<img src={matte}></img>} title="Zero-Shot Image Matting with HQ-SAM" role="Student Research" 
-                      description="Bond is a DIY AI Agent on our custom SaaS platform that leverages a simple UML UI. In its current state, it effectively manipulates user data. It uses a React Typescript frontend, Flask backend, and a novel infrastructure for UML-based flows. Bond can execute its own code in a safe environment in order to accomplish specific tasks. Created in CS98 at Dartmouth College."
+
+          <WorkItem image={<img src={rpp}></img>} title="Risk Budgeting Portfolio Algorithm" role="Student Research"
+            description="Designed a new portfolio optimization algorithm in Python that uses a risk budgeting model to return the optimal equity risk
+contribution that maximizes short-run returns. It uses cyclical coordinate descent to solve the optimization problem with adjustable hyperparameters for time data. Created in the culminating experience Econ 66: Topics in Finance at Dartmouth College. Worked with award winning econometrist Tomas Jagelka. Coded in python and used pandas, numpy, and scipy libraries."
             accomplishments={[
-              "Achieved a functional MVP in 20 weeks",
-              "Successfully developed over 20 data manipulation tools",
-              "Can easily structure and unstructure data",
-              "Reusable code execution framework",
+              "Designed a novel risk budgeting portfolio algorithm for short-run returns",
+              'Earned a faculty citation for academic excellence: "Jack creatively combined his knowledge of computer sciences with economic intuitions to propose a novel take on optimal portfolio construction. His enthusiastic in-class participation enriched the seminar and contributed to the learning of his classmates, and to mine also."',
             ]}
-            av="Backend is currently down for cost-saving reasons. Please refer to the video demo."
             links={[
-              "https://bond-agent.onrender.com/",
-              "https://github.com/dartmouth-cs98-24f/project-diy-ai-agent",
-              "https://vimeo.com/1064513426?share=copy",
-              "https://medium.com/@rebecca.e.ronai.25/bond-2a4a3c0a10ec"
+              "https://github.com/Mace1059/SushiTuesday"
             ]}
           />
-          <WorkItem image={<img src={rpp}></img>} title="Risk Budgeting Portfolio Algorithm" role="Student Research" description="Culminating Experience"></WorkItem>
-          <WorkItem image={<img src={chambiar}></img>} title="Chambiar" role="Full Stack Developer" description=""></WorkItem>
-          <WorkItem image={<img src={TSE}></img>} title="Tiny Search Engine" role="Student" description=""></WorkItem>
+
+          <WorkItem image={<img src={chambiar}></img>} title="Chambiar" role="Full Stack Developer"
+            description="Chambiar is a web application that allows underprivileged communities access AI interview video and audio bots for practice and career preparation. It scrapes the web for job postings and relevant news. Utilized Elevenlabs for audio generation, and Llama-2 for seamless UI
+navigation. Built with a React Typescript frontend, Flask backend, and MongoDB database. Hired as a freelance developer to build a functional MVP in 5 months."
+            accomplishments={[
+              "Achieved a functional MVP in 5 months",
+              "Worked in a scrum team of 3 developers with weekly sprints and effective work distribution",
+              "Implemented figma designs according to the CEO's vision",
+              "Created a custom audio generation pipeline using Elevenlabs",
+              "Implemented a Llama-2 API handler for seamless UI navigation",
+              "Received $300k in Google investment grants",
+              "Successfully accepted into the Workbox Future of Work accelerator program",
+            ]}
+            av="Repository no longer accessible due to change in ownership."
+          />
+
+          <WorkItem image={<img src={yalnix}></img>} title="Yalnix" role="Student"
+            description="Implemented the Yalnix operating system, a Unix-like operating system designed for educational purposes. Developed in C and assembly language, Yalnix provides a simple yet powerful environment for learning about operating systems. It includes features such as process management, memory management, and file systems. Completed in CS58: Operating Systems at Dartmouth College."
+            accomplishments={[
+              "Implemented Yalnix according to the specifications provided in the course materials",
+            ]}
+            links={[
+              "https://drive.google.com/file/d/177RD0MOSTIXTBUnxXIyYWC63BsJodh3K/view?usp=sharing"
+            ]}
+          />
+
+          <WorkItem image={<img src={TSE}></img>} title="Tiny Search Engine" role="Student"
+            description="Implemented a Tiny Search Engine (TSE) that indexes and searches a collection of web pages. The TSE is designed to be efficient and scalable, allowing for quick retrieval of relevant information. The Crawler module crawls the web starting at a certain webpage until a depth has been reached, caching the pages. The Indexer module reads document files produced by the Crawler and writes the index to a file. The querier satisfies the search query using the index file produced by the indexer. Completed in CS50: Introduction to Computer Science at Dartmouth College."
+            accomplishments={[
+              "Implemented the Crawler, Indexer, and Querier modules according to the specifications provided in the course materials.",
+            ]}
+            av="Repository private due to course requirements and Dartmouth College policies."
+            links={[
+              "https://www.cs.dartmouth.edu/~cs50/Lectures/search/"
+            ]}
+          />
+
+          <WorkItem image={<img src={matte}></img>} title="Zero-Shot Image Matting with HQ-SAM" role="Student Research" 
+            description="Fed resulting zero-shot image segmentations from HQ-SAM to a binary value image matte algorithm to produce zero-shot well-segmented image matteing. Created a short report, earning an 100% on the final project.  Created in CS89.32: Multimodal Generative AI at Dartmouth College."
+            accomplishments={[
+              'Earned a faculty citation for academic excellence: "This is a graduate-level course that covers a wide range of advanced topics in Natural Language Processing, Computer Vision, Audio Signal Processing, Computer Graphics, and Large Language Models. Jack T. Macy performed exceptionally well. For the term project, Jack T. Macy and his teammate successfully reproduced the results from the paper Segment Anything in High Quality, NeurIPS 2023. Additionally, they extended the HQ-SAM by integrating zero-shot image matting with MGMatting to improve segmentation results for fine-grained features. The approach demonstrates strong potential, especially in applications requiring high-quality segmentation and matting."',
+            ]}
+            links={[
+              "https://drive.google.com/file/d/1IBo4wu8RHF4HLnj0ilOMHRz772IxwEBL/view?usp=sharing"
+            ]}
+          />
+
           <WorkItem image={<img src={Markov}></img>} title="Hidden Markov Model POS Tagger" role="Student" description=""></WorkItem>
-          <WorkItem image={<img src={yalnix}></img>} title="Yalnix" role="Student" description=""></WorkItem>
           <WorkItem image={<img src={comingsoon}></img>} title="BrackIt!" role="Full Stack Developer" description="Coming Soon!"></WorkItem>
         </WorkSection>
 
         <WorkSection title="Economics + Mathematics Work">
-          <WorkItem image={<img src={dartmouth}></img>} title="Topics in Finance Final Project" role="Student Research" description="Culminating Experience"></WorkItem>
+          <WorkItem image={<img src={dartmouth}></img>} title="Econ 66: Topics in Finance Final Project" role="Student Research" 
+                      description="Designed a new portfolio optimization algorithm in Python that uses a risk budgeting model to return the optimal equity risk
+contribution that maximizes short-run returns. It uses cyclical coordinate descent to solve the optimization problem with adjustable hyperparameters for time data. Created in the culminating experience Econ 66: Topics in Finance at Dartmouth College. Worked with award winning econometrist Tomas Jagelka. Coded in python and used pandas, numpy, and scipy libraries."
+            accomplishments={[
+              "Designed a novel risk budgeting portfolio algorithm for short-run returns",
+              'Earned a faculty citation for academic excellence: "Jack creatively combined his knowledge of computer sciences with economic intuitions to propose a novel take on optimal portfolio construction. His enthusiastic in-class participation enriched the seminar and contributed to the learning of his classmates, and to mine also."',
+            ]}
+            links={[
+              "https://drive.google.com/file/d/1NEZHah6yY1H4ohD8kq_XuQUX-CJyYzvt/view?usp=drive_link"
+            ]}
+          />
+
+
           <WorkItem image={<img src={dartmouth}></img>} title="Econometrics Final Project" role="Student Research" description=""></WorkItem>
-          <WorkItem image={<img src={options}></img>} title="Theoretical Options Pricing" role="Student Research" description=""></WorkItem>
+          <WorkItem image={<img src={options}></img>} title="Theoretical Options Pricing Research" role="Student Research" description=""></WorkItem>
         </WorkSection>
 
         <WorkSection title="Creative Projects">
@@ -134,7 +223,7 @@ function JoinPage() {
               "Developed camera and lighting skills and techniques",
               "Created custom music and sound effects",
               "Selected as cover project for film screening",
-              "Earned a faculty citation for academic excellence: Very hard worker. Goal-oriented. Honest and thoughtful.",
+              'Earned a faculty citation for academic excellence: "Very hard worker. Goal-oriented. Honest and thoughtful."',
             ]}
             links={[
               "https://www.youtube.com/watch?v=iinf480Ules"
@@ -142,7 +231,14 @@ function JoinPage() {
           />
           <WorkItem image={<img src={mural}></img>} title="Lodj Croo Merchandise Design" role="Graphic Designer" description="Creative Projects"></WorkItem>
           <WorkItem image={<img src={mural}></img>} title="Sigma Nu Mural" role="Studio Artist" description="Creative Projects"></WorkItem>
-          <WorkItem image={<img src={mural}></img>} title="Personal Website" role="Frontend Engineer" description="Creative Projects"></WorkItem>
+          <WorkItem image={<img></img>} title="Personal Website" role="Frontend Engineer" description="Welcome!"
+            accomplishments={[
+              "Designed and developed a personal website using React Typescript and Material UI",
+              "Implemented responsive design for optimal viewing on various devices (try changing the window size!)",
+              "Integrated animations and interactive elements for enhanced user experience",
+            ]} 
+            links={["https://github.com/Mace1059/jackmacy"]}
+          />
 
         </WorkSection>
       </div>
