@@ -40,9 +40,9 @@ function JoinPage() {
             {`Jack Macy`}
           </div>
           <div style={{ fontSize: "50px", marginTop: "4rem" }}>
-            I'm a recent graduate from <span style={{ color: "#00693e", fontWeight: "bold", fontFamily: "DartmouthRuzicka,Georgia,serif" }}>Dartmouth College</span> with a B.A in
-            <span style={{ fontWeight: "bold" }}> Computer Science</span> and a B.A.
-            <span style={{ fontWeight: "bold" }}> Economics + Mathematics</span>
+            I'm a recent graduate from <span style={{ color: "#00693e", fontWeight: "bold", fontFamily: "DartmouthRuzicka,Georgia,serif" }}>Dartmouth College</span> with a
+            <span style={{ fontWeight: "bold" }}> B.A. in Computer Science</span> and a
+            <span style={{ fontWeight: "bold" }}> B.A. in Economics + Mathematics</span>
           </div>
         </div>
       </div>
