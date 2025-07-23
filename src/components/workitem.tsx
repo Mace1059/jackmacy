@@ -2,6 +2,7 @@ import { Modal } from "@mui/material";
 import CSS from "csstype";
 import React from "react";
 
+
 type Props = {
   role: string,
   title: string,
@@ -46,62 +47,82 @@ function WorkItem({ role, title, description, image, accomplishments, av, links 
       <Modal
         open={open}
         onClose={handleClose}
-      >
-        <div style={{ ...modalstyles }}>
-          
-          <div style={{ fontWeight: "bold", fontSize: "30px"}}>
-            {title}
-          </div>
-          <div style={{ fontWeight: "bold", fontSize: "20px", marginBottom: "1rem", textTransform: "uppercase", 
-            color: "rgb(0, 105, 62)"}}>
-            {role}
-          </div>
-
-          {/* <div
-            style={{
-              width: "100%",
-              maxHeight: "300px",
-              maxWidth: "20rem",
-              overflow: "hidden",
-              float: "left",
-            }}>
-            {image}
-          </div> */}
-
-          <div style={{ fontSize: "1.2rem"}}>
-            {description}
-          </div>
-          {accomplishments && (
-            <div style={{ fontSize: "1.2rem", marginTop: "2rem"}}>
-                <>
-                  <div style={{fontWeight: "bold"}}>
-                    Key Accomplishments
-                  </div>
-                  <ul>
-                    {accomplishments.map((item, index) => (
-                      <li key={index}>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              
-            </div>)
+        disableScrollLock
+        slotProps={{
+          backdrop: {
+            style: {
+              cursor: "pointer"
+            }
           }
+        }}
+      >
+        <div style={{ ...modalstyles, position: "relative", paddingTop: "3rem" }}>
           
-          <div style={{ fontSize: "1.2rem", marginTop: "1rem"}}>
-            {av ? av : null}
+          {/* Close Button */}
+          <button
+            onClick={handleClose}
+            style={{
+              position: "absolute",
+              top: "0.5rem",
+              right: "0.5rem",
+              fontSize: "1.5rem",
+              border: "none",
+              background: "transparent",
+              cursor: "pointer",
+              color: "gray",
+              zIndex: 10
+            }}
+            aria-label="Close"
+          >
+            ✖
+          </button>
 
-            {links ? (
-            <div style={{ fontSize: "1.2rem"}}>
-                <div style={{display: "flex", flexDirection: "column"}}>
-                {links.map((item, index) => (
-                  <a href={item} style={{color: "rgb(0, 105, 62)"}} key={index} target="_blank">{item}</a>
-                ))}
+          {/* Scrollable Content Wrapper */}
+          <div style={{ overflowY: "auto" }}>
+            <div style={{ fontWeight: "bold", fontSize: "30px" }}>{title}</div>
+            <div style={{
+              fontWeight: "bold",
+              fontSize: "20px",
+              marginBottom: "1rem",
+              textTransform: "uppercase",
+              color: "rgb(0, 105, 62)"
+            }}>
+              {role}
+            </div>
+
+            <div style={{ fontSize: "1.2rem" }}>{description}</div>
+
+            {accomplishments && (
+              <div style={{ fontSize: "1.2rem", marginTop: "2rem" }}>
+                <div style={{ fontWeight: "bold" }}>Key Accomplishments</div>
+                <ul>
+                  {accomplishments.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <div style={{ fontSize: "1.2rem", marginTop: "1rem" }}>
+              {av && av}
+              {links && (
+                <div style={{ fontSize: "1.2rem" }}>
+                  <div style={{ display: "flex", flexDirection: "column" }}>
+                    {links.map((item, index) => (
+                      <a
+                        href={item}
+                        style={{ color: "rgb(0, 105, 62)" }}
+                        key={index}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {item}
+                      </a>
+                    ))}
+                  </div>
                 </div>
-              
-            </div>) 
-            : null}
+              )}
+            </div>
           </div>
         </div>
       </Modal>
@@ -114,8 +135,10 @@ const modalstyles: CSS.Properties = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: "30%",
-  height: "fit-content",
+  maxHeight: "70%",
+  maxWidth: "60%",
+  overflowY: "auto",
+  overflowX: "hidden",
   border: "2px solid",
   backgroundColor: 'white',
   borderColor: "rgba(135, 159, 170, 0.3)",
@@ -138,6 +161,7 @@ const styles: CSS.Properties = {
   backgroundColor: "white",
   gap: "0.5rem",
   borderRadius: "17px",
+  // maxWidth: "100%",
   border: "2px solid",
   height: "300px",
   borderColor: "rgba(135, 159, 170, 0.3)"

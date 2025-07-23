@@ -10,6 +10,13 @@
   }
 }
 
+
+@media (max-width: 400px) {
+  .shrink{
+    padding: 10px !important;
+  }
+}
+
 .enlarge:hover{
   cursor: pointer;
   transform: scale(1.01)

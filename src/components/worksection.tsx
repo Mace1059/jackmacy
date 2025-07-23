@@ -1,7 +1,10 @@
 import { Grid, useMediaQuery, IconButton } from "@mui/material";
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
+
 import CSS from "csstype";
 import React from "react";
+
+import "../styles/components.scss"
 
 type Props = {
   title: string;
@@ -9,7 +12,7 @@ type Props = {
 };
 
 function WorkSection({ title, children }: Props) {
-  const isSmall = useMediaQuery("(max-width:900px)");
+  const isSmall = useMediaQuery("(max-width:1240px)");
   const [open, setOpen] = React.useState(true);
 
   // Auto-expand on large screens
@@ -20,7 +23,7 @@ function WorkSection({ title, children }: Props) {
   const toggleOpen = () => setOpen(prev => !prev);
 
   return (
-    <div style={{ ...styles, flexDirection: isSmall ? "column" : "row" }}>
+    <div className="shrink" style={{ ...styles, flexDirection: isSmall ? "column" : "row" }}>
       <div style={{ ...stickyStyle, ...(isSmall ? stickyMobileStyle : {}) }}>
         <div style={titleBarStyle}>
           <span>{title}</span>
@@ -35,7 +38,7 @@ function WorkSection({ title, children }: Props) {
       {open && (
         <Grid container spacing={2}>
           {children.map((item, key) => (
-            <Grid item sm={12} lg={4} key={key}>
+            <Grid item sm={12} md={6} lg={4} key={key}>
               {item}
             </Grid>
           ))}
