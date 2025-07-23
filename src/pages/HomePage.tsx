@@ -20,6 +20,8 @@ import matte from "/matte.png"
 import yalnix from "/yalnix.png"
 import bond from "/bond.png"
 import rpp from "/rpp.png"
+import lodj from "/lodjcroo.png"
+import nuggets from "/nuggets.png"
 
 import Timeline from "../components/timeline";
 
@@ -162,12 +164,14 @@ navigation. Built with a React Typescript frontend, Flask backend, and MongoDB d
             av="Repository no longer accessible due to change in ownership."
           />
 
-          <WorkItem image={<img src={yalnix}></img>} title="Yalnix" role="Student"
+          <WorkItem image={<img src={yalnix}></img>} title="Yalnix Operating System" role="Student"
             description="Implemented the Yalnix operating system, a Unix-like operating system designed for educational purposes. Developed in C and assembly language, Yalnix provides a simple yet powerful environment for learning about operating systems. It includes features such as process management, memory management, and file systems. Completed in CS58: Operating Systems at Dartmouth College."
             accomplishments={[
               "Implemented Yalnix according to the specifications provided in the course materials",
             ]}
+            av="Repository private due to course requirements and Dartmouth College policies. Code tour available."
             links={[
+              "https://github.com/cs58-wi2025/yalnix-team-noname-two",
               "https://drive.google.com/file/d/177RD0MOSTIXTBUnxXIyYWC63BsJodh3K/view?usp=sharing"
             ]}
           />
@@ -177,9 +181,24 @@ navigation. Built with a React Typescript frontend, Flask backend, and MongoDB d
             accomplishments={[
               "Implemented the Crawler, Indexer, and Querier modules according to the specifications provided in the course materials.",
             ]}
-            av="Repository private due to course requirements and Dartmouth College policies."
+            av="Repository private due to course requirements and Dartmouth College policies. In the process of transferring ownership of codebase."
             links={[
               "https://www.cs.dartmouth.edu/~cs50/Lectures/search/"
+            ]}
+          />
+
+          <WorkItem image={<img src={nuggets}></img>} title="Nuggets" role="Student"
+            description="Implemented Nuggets, a multiplayer exploration game which utilizes a client and a server. The server maintains the game states and handles player interactions and game mechanics, while the clients display the game to a user. Completed as the final prohject of CS50: Software Design and Implementation at Dartmouth College."
+            accomplishments={[
+              "Notably, individually implemented light mechanics upon entering a room according to the specs",
+              "Successfully implemented client and server according to the specs",
+              'Given the label "Team Coding Ninja" by the professor for my work on the project',
+            ]}
+            av="Repository private due to course requirements and Dartmouth College policies. Code tour available."
+            links={[
+              "https://github.com/Mace1059/nuggets-Dartmace",
+              "https://github.com/cs50spring2021/nuggets-info/blob/main/REQUIREMENTS.md"
+
             ]}
           />
 
@@ -193,8 +212,16 @@ navigation. Built with a React Typescript frontend, Flask backend, and MongoDB d
             ]}
           />
 
-          <WorkItem image={<img src={Markov}></img>} title="Hidden Markov Model POS Tagger" role="Student" description=""></WorkItem>
-          <WorkItem image={<img src={comingsoon}></img>} title="BrackIt!" role="Full Stack Developer" description="Coming Soon!"></WorkItem>
+          <WorkItem image={<img src={Markov}></img>} title="Hidden Markov Model POS Tagger" role="Student" 
+            description="Built a Hidden Markov Model (HMM) Part-of-Speech (POS) tagger that uses the Viterbi algorithm to find the most likely sequence of POS tags for a given sentence. The HMM is trained on a corpus of annotated sentences and can be used to tag new sentences. Completed in CS10: Problem Solving via Object Oriented Programming at Dartmouth College."
+            accomplishments={[
+              "Implemented the HMM POS tagger according to the specifications provided in the course materials.",
+            ]}
+            links={[
+              "https://drive.google.com/drive/folders/1M1K6YRsj0fLEpHaTSZS6R8nEHRnRFmMh?usp=drive_link"
+            ]}
+          />
+          <WorkItem image={<img src={comingsoon}></img>} title="BrackIt!" role="Full Stack Developer" description="An educational tournament game that keeps students engaged for longer. Coming Soon!"></WorkItem>
         </WorkSection>
 
         <WorkSection title="Economics + Mathematics Work">
@@ -211,8 +238,31 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
           />
 
 
-          <WorkItem image={<img src={dartmouth}></img>} title="Econometrics Final Project" role="Student Research" description=""></WorkItem>
-          <WorkItem image={<img src={options}></img>} title="Theoretical Options Pricing Research" role="Student Research" description=""></WorkItem>
+          <WorkItem image={<img src={dartmouth}></img>} title="Econometrics Final Project" role="Student Research"
+            description="Used a baseline and follow up survey of Canadian high schoolers to analyzes the effect of stress, impulsivity, student debt, and number of children on
+sleeping habits. Use several econometric techniques for robustness and to determine causality and remove biases. Found 100% joint significance of all variables used in the regression."
+            accomplishments={[
+              "Wrote robust Stata code for regression analysis",
+              "Successfully removed biases and determined causality",
+              "Implemented several econometric techniques for robustness, including an instrumental variable",
+            ]}
+            links={[
+              "https://drive.google.com/file/d/18NcFUKAmnv-w33fGwhy-LgOgyAHFOUtu/view?usp=sharing"
+            ]}
+          />
+          <WorkItem image={<img src={options}></img>} title="Theoretical Options Pricing Research" role="Student Research" 
+            description="This paper proposes a new method for pricing options by reinvesting divdends and changing contract size and strike price. The option will thus retain its true value. While discovered on our own, it aligns with prior work done by Gaske and Merton with the added bonus of a Monte Carlo experiment. Completed as a final project in Math 86: Mathematical Finance at Dartmouth College."
+            accomplishments={[
+              "Independently rediscovered a true theoretical options pricing model",
+              "Utilized Monte Carlo methods to simulate the pricing model",
+              "Learned Latex",
+              "Earned an 100% on the final project",
+            ]}
+            links={[
+              "https://drive.google.com/file/d/1U3JLotC12alNwXdBlaGlRvmH0aul1QHX/view?usp=sharing",
+              "https://drive.google.com/drive/folders/13rxIaK631rn8Wez1N4otLUTrjjL4hlAv?usp=sharing"
+            ]}
+          />
         </WorkSection>
 
         <WorkSection title="Creative Projects">
@@ -229,8 +279,15 @@ contribution that maximizes short-run returns. It uses cyclical coordinate desce
               "https://www.youtube.com/watch?v=iinf480Ules"
             ]}
           />
-          <WorkItem image={<img src={mural}></img>} title="Lodj Croo Merchandise Design" role="Graphic Designer" description="Creative Projects"></WorkItem>
-          <WorkItem image={<img src={mural}></img>} title="Sigma Nu Mural" role="Studio Artist" description="Creative Projects"></WorkItem>
+          <WorkItem image={<img src={lodj} style={{filter: "invert(1)"}}></img>} title="Lodj Croo Merchandise Design" role="Graphic Designer" 
+            links={[
+              "https://drive.google.com/file/d/1geAZuKYU8C992OCrtd6Ej1MplNoXc_0p/view?usp=drive_link"
+            ]}
+            description="Designed the Lodj Croo logo for Dartmouth First Year Trips in 2024."
+          />
+          <WorkItem image={<img src={mural}></img>} title="Sigma Nu Mural" role="Creative Lead"
+            description="Designed the painted a mural for Dartmouth's Sigma Nu fraternity, incorporating aspects of our history into the design. Completed in 48 hours."
+          />
           <WorkItem image={<img></img>} title="Personal Website" role="Frontend Engineer" description="Welcome!"
             accomplishments={[
               "Designed and developed a personal website using React Typescript and Material UI",
