@@ -24,7 +24,7 @@ function NavBar() {
           <a href={"https://drive.google.com/file/d/1xy2tZYP352A0zsIK8n7ziZMD7sJOYHDK/view?usp=sharing"} target="_blank">
             Resume
           </a>
-          <a href={"https://www.linkedin.com/in/jack-macy-b227a8239/"} target="_blank">
+          <a href={"https://www.linkedin.com/in/jack-macy/"} target="_blank">
             <LinkedInIcon fontSize="large"></LinkedInIcon>
           </a>
         </nav>

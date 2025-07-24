@@ -16,7 +16,7 @@ function Footer() {
           </a>
         </Grid>
         <Grid item xs={4} sx={{ display: "flex", justifyContent: "flex-end", alignItems: "center" }}>
-          <a href={"https://www.linkedin.com/in/jack-macy-b227a8239/"} target="_blank">
+          <a href={"https://www.linkedin.com/in/jack-macy/"} target="_blank">
             <LinkedInIcon fontSize="large" />
           </a>
         </Grid>

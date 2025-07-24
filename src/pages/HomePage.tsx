@@ -10,7 +10,7 @@ import mgame from "/mgame.png"
 import mural from "/mural.jpg"
 import coldwar from "/coldwar.png"
 import plastic from "/plastic.png"
-import forumsys from "/forumsys.jpg"
+import qgears from "/quantum_gears_logo.jfif"
 import chambiar from "/chambiar.jfif"
 import comingsoon from "/comingsoon.jpg"
 import inforest from "/inforest.png"
@@ -63,7 +63,7 @@ function JoinPage() {
         </div>
 
         <WorkSection title="Internships">
-          <WorkItem image={<img src={forumsys}></img>} title="SecureGPT Multi-LLM Gateway" role="AI Developer" 
+          <WorkItem image={<img src={qgears}></img>} title="SecureGPT: Multi-LLM Gateway" role="AI Developer" 
             description="Worked on the SecureGPT Multi-LLM Gateway, an application allowing for safe and secure interactions with an LLM through data obfuscation. Added excel functionality through the creation of a code self-execution framework leveraging python libraries like pandas and scikit. Utilizes a dual-model preprocessor for nonnumeric data and a Chain of Thought model for data analysis. Responsible for mentoring other interns and attending daily team meetings. Created by Quantum Gears at Forum Systems."
             accomplishments={[
               "Spearheaded a chain-of-thought architecture for statistical analysis within Excel sheets, improving a gpt-4 baseline by 11%",
