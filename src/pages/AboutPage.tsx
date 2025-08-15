@@ -42,7 +42,7 @@ function AboutPage() {
             and combinatorics background in my toolbelt. I am currently looking for a full time job and would be grateful to discuss my qualifications further.
           </p>
           <p style={{ marginTop: "10rem" }}>
-            Please feel free to check out my <a href={"https://drive.google.com/file/d/110OpGLYNAHsw1QKvSqIB48HEL1BX45Fr/view?usp=sharing"} target="_blank" style={{color: "#00693e", fontWeight: "bold"}}>resume</a> and
+            Please feel free to check out my <a href={"https://drive.google.com/file/d/110OpGLYNAHsw1QKvSqIB48HEL1BX45Fr/view?usp=drive_link"} target="_blank" style={{color: "#00693e", fontWeight: "bold"}}>resume</a> and
             reach out to me at <a href={"mailto:jackmacy123@gmail.com"} style={{color: "#00693e", fontWeight: "bold"}}>jackmacy123@gmail.com</a>.
           </p>
         </div>

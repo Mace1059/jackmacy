@@ -21,7 +21,7 @@ function NavBar() {
           <a href="/about">
             About
           </a>
-          <a href={"https://drive.google.com/file/d/110OpGLYNAHsw1QKvSqIB48HEL1BX45Fr/view?usp=sharing"} target="_blank">
+          <a href={"https://drive.google.com/file/d/110OpGLYNAHsw1QKvSqIB48HEL1BX45Fr/view?usp=drive_link"} target="_blank">
             Resume
           </a>
           <a href={"https://www.linkedin.com/in/jack-macy/"} target="_blank">
